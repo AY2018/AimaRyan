@@ -1,1 +1,1 @@
-# AimaRyan
+# Website for Alma - Rework from WP to FromScratch
