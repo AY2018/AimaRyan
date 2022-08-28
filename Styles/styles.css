@@ -103,6 +103,7 @@ header nav ul li ul {
   display: none;
   position: absolute;
   overflow: auto;
+  background-color: white;
 }
 
 header nav ul li ul li {
