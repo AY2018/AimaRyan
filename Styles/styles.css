@@ -130,6 +130,7 @@ header nav ul li:hover ul {
   top: 0;
   left: 0;
   background-color: #ffffff80;
+  z-index: 9999;
 }
 
 /* FOOTER */
@@ -170,7 +171,7 @@ footer .footer_titles {
 }
 
 footer .footer_titles a {
-  width: 33%;
+  width: 50%;
   text-align: center;
   color: black;
   font-size: 16px;
@@ -261,6 +262,51 @@ footer .footer_titles a:hover {
 
 .objectifs_pedagogiques ul li span {
   color: #44649f;
+}
+
+.gallerie-scene {
+  padding: 20px 80px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  grid-gap: 30px;
+  margin-bottom: -30px;
+}
+
+.gallerie-scene img {
+  height: 100%;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+
+.gallerie-scene img:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 2px 2px 10px black;
+          box-shadow: 2px 2px 10px black;
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
+.gallerie-scene .relat {
+  position: relative;
+}
+
+.gallerie-scene a {
+  position: absolute;
+  padding: 13px 20px;
+  background-color: rgba(84, 89, 95, 0.45);
+  border-radius: 15px;
+  color: white;
+  border: solid white 2px;
+  top: 50%;
+  left: 30%;
+}
+
+.gallerie-scene a:hover {
+  background-color: rgba(61, 65, 69, 0.45);
+  font-weight: bold;
+  cursor: pointer;
 }
 
 /* PAGE COLLABORATIONS */

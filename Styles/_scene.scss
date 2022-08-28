@@ -1,0 +1,40 @@
+.gallerie-scene {
+    padding: 20px 80px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 30px;
+    margin-bottom: -30px;
+
+    img {
+        height: 100%;
+        transition: 0.2s ease;
+
+        &:hover {
+            cursor: pointer;
+            box-shadow: 2px 2px 10px black;;
+            transform: scale(1.02);
+        }
+    }
+
+    .relat{
+        position: relative;
+    }
+
+    a{
+        position: absolute;
+        padding: 13px 20px;
+        background-color: rgba(84, 89, 95, 0.45);
+        border-radius: 15px;
+        color: white;
+        border: solid white 2px;
+        top: 50%;
+        left: 30%;
+        &:hover{
+            background-color: rgba(61, 65, 69, 0.45);
+            font-weight: bold;
+            cursor: pointer;
+        }
+    }
+    
+}
+

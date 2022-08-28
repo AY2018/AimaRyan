@@ -86,6 +86,7 @@ header{
     top: 0;
     left: 0;
     background-color: #ffffff80;
+    z-index: 9999;
 }
 /* FOOTER */
 
@@ -109,7 +110,7 @@ footer{
         width: 100%;
         margin: 15px 0px;
         a{
-            width: 33%;
+            width: 50%;
             text-align: center;
             color: black;
             font-size: 16px;
