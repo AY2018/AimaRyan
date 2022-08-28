@@ -545,4 +545,94 @@ footer .footer_titles a:hover {
     bottom: 10px;
   }
 }
+
+/* PAGE CONTACT */
+.contact_section {
+  position: relative;
+  z-index: 555;
+  margin: auto;
+  width: 95%;
+  height: 80vh;
+  background-color: #424242;
+  margin-bottom: -30px;
+  /* Contact - Image*/
+  /* Contact - Form */
+}
+
+.contact_section .contact_image {
+  height: 100%;
+  background-color: blue;
+}
+
+.contact_section .contact_image img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.contact_section .contact_form {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 55%;
+  padding: 40px;
+}
+
+.contact_section .contact_form label {
+  color: #929292;
+}
+
+.contact_section .contact_form input, .contact_section .contact_form textarea {
+  background-color: transparent;
+  color: white;
+  padding: 5px 20px;
+  border-radius: 5px;
+  width: 100%;
+  height: 40px;
+  margin-top: 5px;
+  border: 2px solid #818a90;
+  font-size: 16px;
+  -webkit-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
+}
+
+.contact_section .contact_form input:focus, .contact_section .contact_form textarea:focus {
+  outline: none !important;
+  border: 2px solid red;
+}
+
+.contact_section .contact_form .name {
+  width: 34%;
+  display: inline-block;
+}
+
+.contact_section .contact_form .email {
+  width: 62%;
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.contact_section .contact_form .text {
+  margin-top: 60px;
+}
+
+.contact_section .contact_form .text textarea {
+  height: 120px;
+}
+
+.contact_section .contact_form .text textarea:focus {
+  border: 2px solid #818a90;
+}
+
+.contact_section .contact_form .form-btn {
+  width: 100px;
+  background-color: #595959;
+  margin-top: 40px;
+}
+
+.contact_section .contact_form .form-btn:hover {
+  cursor: pointer;
+  font-weight: bold;
+  background-color: #aeaeae;
+}
 /*# sourceMappingURL=styles.css.map */
