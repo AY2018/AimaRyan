@@ -35,6 +35,8 @@ header {
           align-items: center;
   padding: 8px 80px;
   width: 100%;
+  position: relative;
+  z-index: 9999;
   /* LOGO */
   /* MENU */
 }
