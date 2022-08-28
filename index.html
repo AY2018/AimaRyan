@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
-    <link rel="stylesheet" href="../Styles/styles.css">
+    <link rel="stylesheet" href="./Styles/styles.css">
     <title>Home - Alma Ryan</title>
 </head>
 <!-- NOTES : CHECK LA VIDEO YOUTUBE ET VOIR COMMENT LA RENDRE ACCESSIBLE-->
@@ -24,23 +24,85 @@
         <!-- MENU -->
         <nav>
             <ul>
-                <li><a href="./index.html">Accueil</a>
+                <li><a  class="current" href="#">Accueil</a>
                 <li><a href="./Pages/biographie.html">Biographie</a>
                 <li><a href="./Pages/pedagogie.html">Pédagogie</a>
-                <li><a href="./Pages/scene">Scène <i class="fa-solid fa-angle-down"></i></a>
+                <li><a href="./Pages/scene.html">Scène <i class="fa-solid fa-angle-down"></i></a>
                     <ul>
                         <li><a href="./Pages/autresCollaborations.html">Autres collaborations</a></li>
                     </ul>
                 </li>
-                <li><a href="#" class="current">Galerie <i class="fa-solid fa-angle-down"></i></a>
+                <li><a href="#">Galerie <i class="fa-solid fa-angle-down"></i></a>
                     <ul>
                         <li><a href="./Pages/photos.html">Photos</a></li>
                         <li><a href="./Pages/videos.html">Vidéos</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Agenda</a>
-                <li><a href="./Pages/contact.html">Contact</a>
+                <li><a href="./Pages/agenda.html">Agenda</a>
+                <li><a  href="./Pages/contact.html">Contact</a>
             </ul>
 
         </nav>
-    </header>
+
+        </header>
+
+
+<!-- MAIN -->
+
+  <div class="img-slider">
+    <div class="slide active">
+      <img src="./caroussel/1.jpg" alt="">
+      <div class="info">
+        <h2>Slide 01</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+    </div>
+    <div class="slide">
+      <img src="./caroussel/2.jpeg" alt="">
+      <div class="info">
+        <h2>Slide 02</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+    </div>
+    <div class="slide">
+      <img src="./caroussel/3.jpeg" alt="">
+      <div class="info">
+        <h2>Slide 03</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+    </div>
+    <div class="slide">
+      <img src="./caroussel/4.jpeg" alt="">
+      <div class="info">
+        <h2>Slide 04</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+    </div>
+
+    <div class="navigation">
+      <div class="btn active"></div>
+      <div class="btn"></div>
+      <div class="btn"></div>
+      <div class="btn"></div>
+    </div>
+  </div>
+
+
+   <!-- FOOTER -->
+   <footer class="footer_collab">
+    <a href="https://www.facebook.com/alma.ryan.10"><i class="fa-brands fa-facebook"></i></a>
+    <!-- pas trouvé de lien Facebook du coup j'ai mis ce que g trouvé sur google -->
+    <div class="footer_titles">
+        <a href="#">Crédits Photos</a>
+        <a href="#">Espace Membre</a>
+        <a href="./contact.html">Contact</a>
+    </div>
+    <p>Alma Ryan ©</p>
+</footer>
+
+
+<script src="caroussel.js"></script>
+
+</body>
+
+</html>
