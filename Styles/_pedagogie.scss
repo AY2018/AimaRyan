@@ -1,0 +1,44 @@
+/* PAGE PEDAGOGIE */
+
+.pedagogie_sliderAndText{
+    padding: 20px 80px;
+    /* 1 - Pédagogie slideshow*/
+    .slideshow{
+        width: 30%;
+        margin-right: 20px;
+    }
+
+    /* 2 - Pédagogie texte 1*/
+    .diplomes{
+        width: 65%;
+        p{
+            margin-bottom: 15px;
+            color: rgb(143, 143, 143);
+            text-align: center;
+            a{
+                transition: .15s ease-in;
+                &:hover{
+                    color: #13aff0;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+/* 3 - Pédagogie texte 2 - Objectifs */
+
+.objectifs_pedagogiques{
+    padding: 20px 80px;
+    color: rgb(143, 143, 143);
+    ul{
+        li{
+            list-style: circle;
+            margin-bottom: 10px;
+            font-size: 14px;
+            span{
+                color: #44649f;
+            }
+        }
+    }
+}

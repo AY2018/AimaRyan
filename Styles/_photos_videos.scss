@@ -1,0 +1,38 @@
+/* PAGE PHOTO*/
+.gallerie-photo{
+    padding: 20px 80px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-bottom: -30px;
+    img{
+        height: 100%;
+        transition: 0.2s ease;
+        &:hover{
+            cursor: pointer;
+            transform: scale(1.1);
+        }
+    }
+}
+
+
+
+
+
+
+/* PAGE VIDEOS*/
+
+.gallerie-videos {
+    padding: 20px 80px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+    margin-bottom: -30px;
+    .gallerie_videoYtb{
+        background-color: red;
+        height: 40vh;
+        iframe{
+            height: 100%;
+            width: 100%;
+        }
+    }
+}

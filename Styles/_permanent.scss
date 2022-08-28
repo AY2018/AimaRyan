@@ -1,0 +1,115 @@
+/* HEADER */
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 8px 80px;
+    width: 100%;
+    /* LOGO */
+    .logo {
+        width: 40%;
+        h1 {
+            font-size: 20px;
+            color: #003563;
+    
+            span {
+                font-size: 15px;
+                color: #b4bbc1;
+                font-weight: 600;
+            }
+        }
+    }
+
+    /* MENU */
+    nav {
+        a {
+            padding: 13px 20px;
+            display: block;
+            text-decoration: none;
+            font-size: 14px;
+            transition: 0.15s ease-in;
+            &:hover {
+                color: #13aff0;
+                cursor: pointer;
+                text-decoration: underline;
+            }
+            .fa-angle-down{
+                margin-left: 6px;
+            }
+            &:hover i{
+                text-decoration: none;
+            }
+        }
+        .current {
+            color: #13aff0;
+            text-decoration: underline;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            li {
+                float: left;
+                position: relative;
+                width: max-content;
+                ul {
+                    display: none;
+                    position: absolute;
+                    overflow: auto;
+                    li {
+                        float: none;
+                        transition: 0.15s ease-in;
+                        &:hover{
+                            background-color: #b4bbc1;
+                            cursor: pointer;
+                        }
+                        &:hover a{
+                            color: white;
+                        }
+                        
+                    }
+                }
+    
+                &:hover ul {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+/* FOOTER */
+
+footer{
+    width: 100%;
+    margin-top: 50px;
+    padding: 20px 30px 50px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    a{
+        color: #057eeb;
+        font-size: 30px;
+    }
+    p{
+        color: #b4bbc1;
+    }
+    .footer_titles{
+        display: flex;
+        width: 100%;
+        margin: 15px 0px;
+        a{
+            width: 33%;
+            text-align: center;
+            color: black;
+            font-size: 16px;
+            &:hover{
+                text-decoration: underline;
+                color: #13aff0;
+            }
+        }
+    }
+}
