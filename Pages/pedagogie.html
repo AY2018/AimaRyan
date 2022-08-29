@@ -8,6 +8,8 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     <link rel="stylesheet" href="../Styles/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
     <title>Alma Ryan - Pédagogie</title>
 </head>
 
@@ -48,7 +50,35 @@
     <main>
         <!-- Slider -->
         <section class="pedagogie_sliderAndText">
-            <article class="slideshow"></article>
+            <article class="slideshow">
+                <!-- Slider main container -->
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <img src="../img/pedag1-min.jpeg" alt=""> 
+                            <p>Programme des cours de Flamenco 2020</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../img/pedag2-min.jpeg" alt="">
+                            <p>Cours de contemporain et conscience corporelle 2017</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../img/pedag3-min.jpeg" alt="">
+                            <p>Cours de contemporain et conscience corporelle 2017</p>
+                        </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </article>
+
+            <!-- Diplomes texte-->
             <article class="diplomes">
                 <p>
                     Dès son retour en France en 2018 Alma enseignera deux années durant le flamenco dans le 13ème arrondissement de Paris
@@ -112,6 +142,8 @@
         <p>Alma Ryan ©</p>
     </footer>
     <script src="../stickyNavBar.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="../slider.js"></script>
 </body>
 
 </html>
