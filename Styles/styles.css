@@ -392,6 +392,72 @@ footer .footer_titles a:hover {
   width: 100%;
 }
 
+/* PAGE CREDITS*/
+.credits_galerie {
+  padding: 20px 80px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto auto;
+      grid-template-columns: auto auto auto auto;
+  -ms-grid-rows: auto auto auto auto;
+      grid-template-rows: auto auto auto auto;
+  grid-gap: 20px;
+  margin-bottom: -30px;
+}
+
+.credits_galerie div {
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+
+.credits_galerie div:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.credits_galerie img {
+  height: 90%;
+}
+
+.credits_galerie p {
+  color: grey;
+  font-style: italic;
+  height: 10%;
+  padding: 0px 15px;
+  text-align: center;
+  font-size: 13px;
+}
+
+.credits_galerie .i1 {
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  -ms-grid-row-span: 2;
+      grid-row-end: span 2;
+}
+
+.credits_galerie .i1 img {
+  height: 95%;
+}
+
+.credits_galerie .i1 p {
+  height: 5%;
+}
+
+.credits_galerie .i8, .credits_galerie .i9, .credits_galerie .i10 {
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+  -ms-grid-row-span: 2;
+      grid-row-end: span 2;
+}
+
+.credits_galerie .i8 img, .credits_galerie .i9 img, .credits_galerie .i10 img {
+  height: 95%;
+}
+
+.credits_galerie .i8 p, .credits_galerie .i9 p, .credits_galerie .i10 p {
+  height: 5%;
+}
+
 .img-slider {
   position: relative;
   width: 800px;

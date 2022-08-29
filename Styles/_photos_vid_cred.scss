@@ -35,11 +35,53 @@
 
 /* PAGE CREDITS*/
 
-.gallerie-videos {
+.credits_galerie {
     padding: 20px 80px;
     display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 25% 25% 25% 25%;
-    grid-gap: 10px;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    grid-gap: 20px;
     margin-bottom: -30px;
+
+    div{
+        transition: 0.2s ease;
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+    img{
+        height: 90%;
+    }
+
+    p{
+        color: grey;
+        font-style: italic;
+        height: 10%;
+        padding: 0px 15px;
+        text-align: center;
+        font-size: 13px;
+    }
+
+    .i1{
+        grid-row-start: 1;
+        grid-row-end: span 2;
+        img {
+                height: 95%;
+            }
+        
+            p {
+                height: 5%;
+            }
+    }
+
+    .i8, .i9, .i10{
+        grid-row-start: 3;
+        grid-row-end: span 2;
+        img{
+            height: 95%;
+        }
+        p{
+            height: 5%;
+        }
+    }
 }
