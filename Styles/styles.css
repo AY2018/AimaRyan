@@ -122,6 +122,8 @@ header nav ul li ul li:hover {
 
 header nav ul li ul li a {
   margin-left: 0px;
+  width: 100%;
+  white-space: nowrap;
 }
 
 header nav ul li:hover ul {
