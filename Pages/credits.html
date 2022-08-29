@@ -18,7 +18,9 @@
 
         <!-- LOGO -->
         <div class="logo">
-            <h1>Alma Ryan <span class="description_logo"> - Danseuse & Professeur de danse</span></h1>
+            <a href="./main.html">
+                <h1>Alma Ryan <span class="description_logo"> - Danseuse & Professeur de danse</span></h1>
+            </a>
         </div>
 
         <!-- MENU -->
@@ -63,13 +65,31 @@
 
     <!-- FOOTER -->
     <footer>
-        <a href="https://www.facebook.com/alma.ryan.10"><i class="fa-brands fa-facebook"></i></a>
-        <!-- pas trouvé de lien Facebook du coup j'ai mis ce que g trouvé sur google -->
-        <div class="footer_titles">
-            <a href="./credits.html">Crédits Photos</a>
-            <a href="./contact.html">Contact</a>
+        <!-- Form Footer-->
+        <div class="footer_form">
+            <form action="">
+                <div class="name">
+                    <label for="name">Name</label><br>
+                    <input type="text" placeholder="Name" id="lname" name="lname"><br>
+                </div>
+    
+                <div class="email">
+                    <label for="email">Email</label><br>
+                    <input type="email" placeholder="Email" id="email" name="email"><br>
+                </div>
+                <div class="text">
+                    <label for="message">Message</label><br>
+                    <textarea name="message" placeholder="Message"></textarea>
+                </div>
+                <input type="submit" value="SEND" class="form-btn">
+            </form>
         </div>
-        <p>Alma Ryan ©</p>
+    
+        <div class="footer_titles">
+            <a href="#">Crédits Photos</a>
+            <a href="https://www.facebook.com/alma.ryan.10"><i class="fa-brands fa-square-facebook"></i></a>
+            <p>Alma Ryan ©</p>
+        </div>
     </footer>
 
     <script src="../stickyNavBar.js"></script>

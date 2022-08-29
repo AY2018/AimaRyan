@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="../Styles/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+
+    <title>Main - Alma Ryan</title>
+</head>
+<!-- NOTES : CHECK LA VIDEO YOUTUBE ET VOIR COMMENT LA RENDRE ACCESSIBLE-->
+
+<body>
+    <!-- HEADER -->
+    <header class="main_header">
+
+        <!-- LOGO -->
+        <div class="logo">
+            <a href="./main.html">
+                <h1>Alma Ryan <span class="description_logo"> - Danseuse & Professeur de danse</span></h1>
+            </a>
+        </div>
+
+        <!-- MENU -->
+        <nav>
+            <ul>
+                <li><a class="current" href="../index.html">Accueil</a>
+                <li><a href="./biographie.html">Biographie</a>
+                <li><a href="./pedagogie.html">Pédagogie</a>
+                <li><a href="./scene.html">Scène <i class="fa-solid fa-angle-down"></i></a>
+                    <ul>
+                        <li><a href="./autresCollaborations.html">Autres collaborations</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Galerie <i class="fa-solid fa-angle-down"></i></a>
+                    <ul>
+                        <li><a href="./photos.html">Photos</a></li>
+                        <li><a href="./videos.html">Vidéos</a></li>
+                    </ul>
+                </li>
+                <li><a href="./agenda.html">Agenda</a>
+                <li><a href="./contact.html">Contact</a>
+            </ul>
+
+        </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+        <!-- Slider -->
+        <section class="main_slider_container">
+            <article class="slideshow">
+                <!-- Slider main container -->
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <img src="../img/main1.jpg" alt="">
+                            <a class="redBtn" href="./videos.html">L'événement</a>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../img/img3-min.jpeg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../img/img6-min.jpeg" alt="">
+                            <a href="./biographie.html">En savoir +</a>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../img/img2-min.jpeg" alt="">
+                            <a href="./videos.html">L'événement</a>
+                        </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+            
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="contact_footer main_footer">
+        <div class="footer_titles">
+            <a href="./credits.html">Crédits Photos</a>
+            <a href="https://www.facebook.com/alma.ryan.10"><i class="fa-brands fa-facebook"></i></a>
+            <p>Alma Ryan ©</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="../slider.js"></script>
+    <script src="../stickyNavBar.js"></script>
+</body>
+
+</html>

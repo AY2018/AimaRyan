@@ -1,0 +1,74 @@
+.main_slider_container{
+    background-color: #19191c;
+    .slideshow {
+            display: flex;
+            justify-content: flex-start;
+            width: 100%;
+    
+            .swiper {
+                width:auto;
+                height: 82vh;
+    
+                img {
+                    height: 90%;
+                    width: auto;
+                }
+
+                .swiper-wrapper{
+                    background-color: gray;
+                }
+                .swiper-slide {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: relative;
+                    width: 50%;
+                    a{
+                        position: absolute;
+                        transform: translateX(0%);
+                        transform: translateY(0%);
+                        text-align: center;
+                        padding: 13px 20px;
+                        background-color: transparent;
+                        border: solid 2px white;
+                        border-radius: 5px;
+                        color: white;
+                        font-weight: bold;
+                        transition: 0.2s ease-in;
+                        &:hover{
+                            cursor: pointer;
+                            background-color: whitesmoke;
+                            color: black;
+                        }
+                    }
+                    .redBtn{
+                        color: #ce031a;
+                        border: solid 2px #ce031a;
+                        transition: 0.2s ease-in;
+                            &:hover {
+                                cursor: pointer;
+                                background-color: #ce031a;
+                                color: white;
+                            }
+                    }
+                }
+    
+                .swiper-pagination-bullet-active {
+                    background-color: white;
+                }
+    
+                .swiper-button-prev,
+                .swiper-button-next {
+                    color: #13aff0;
+                }
+            }
+        }
+}
+
+.main_footer{
+    margin-top: 0px;
+}
+
+.main_header{
+    background-color: #19191c;
+}

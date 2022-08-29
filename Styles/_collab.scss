@@ -3,11 +3,12 @@
 .collab-section{
     padding: 20px 80px;
     display: flex;
-    align-items: center;
+    height: 75vh;
     /* Vidéo Youtube */
     .videoYtb{
         height: 200px;
         width: 35%;
+        margin-top: 15px;
         iframe{
             width: 100%;
             height: 100%;
