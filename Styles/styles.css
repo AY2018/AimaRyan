@@ -37,7 +37,7 @@ header {
   width: 100%;
   position: relative;
   z-index: 9999;
-  background-color: #24252A;
+  background-color: #ffffff;
   /* LOGO */
   /* MENU */
 }
@@ -60,7 +60,7 @@ header .logo h1 span {
 header nav a {
   padding: 10px 15px;
   margin-left: 5px;
-  color: white;
+  color: black;
   display: block;
   text-decoration: none;
   font-size: 14px;
@@ -99,6 +99,7 @@ header nav ul li {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
+  margin-right: 5px;
 }
 
 header nav ul li ul {
@@ -128,6 +129,14 @@ header nav ul li ul li a {
 
 header nav ul li:hover ul, header nav ul li:focus-within ul {
   display: block;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #ffffff80;
+  z-index: 9999;
 }
 
 /* FOOTER */
