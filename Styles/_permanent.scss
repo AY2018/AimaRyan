@@ -101,11 +101,10 @@ footer{
     width: 100%;
     margin-top: 50px;
     padding: 10px;
-    position:absolute;
-    bottom: 0;
     display: flex;
     justify-content: center;
     background-color: #24252A;
+    margin-bottom: -100px;
     p{
         color: #b4bbc1;
         margin-right: 50px;
