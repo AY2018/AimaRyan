@@ -126,16 +126,8 @@ header nav ul li ul li a {
   white-space: nowrap;
 }
 
-header nav ul li:hover ul {
+header nav ul li:hover ul, header nav ul li:focus-within ul {
   display: block;
-}
-
-.sticky {
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: #ffffff80;
-  z-index: 9999;
 }
 
 /* FOOTER */
@@ -264,6 +256,81 @@ footer .footer_form .form-btn:hover {
   cursor: pointer;
   font-weight: bold;
   background-color: #38a2ff;
+}
+
+/* RESPONSIVE HEADER */
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger .bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+}
+
+@media (max-width: 768px) {
+  header {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  header .hamburger {
+    display: block;
+    position: absolute;
+    right: 60px;
+    top: 20px;
+  }
+  header .active0 .bar:nth-child(2) {
+    opacity: 0;
+  }
+  header .active0 .bar:nth-child(1) {
+    -webkit-transform: translateY(8px) rotate(45deg);
+            transform: translateY(8px) rotate(45deg);
+  }
+  header .active0 .bar:nth-child(3) {
+    -webkit-transform: translateY(-8px) rotate(-45deg);
+            transform: translateY(-8px) rotate(-45deg);
+  }
+  header .nav-menu {
+    position: fixed;
+    padding-top: 60px;
+    right: -100%;
+    top: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: rgba(35, 36, 41, 0.7);
+    width: 70%;
+    height: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  header .nav-menu li {
+    margin: 16px 0;
+  }
+  header .nav-menu li ul {
+    position: relative;
+    width: 100%;
+  }
+  header .active {
+    right: 0;
+  }
+  header .descend {
+    margin-top: 20px;
+    -webkit-transition: 0.3s ease-in;
+    transition: 0.3s ease-in;
+  }
 }
 
 .slider {
