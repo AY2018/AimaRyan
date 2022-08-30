@@ -112,35 +112,30 @@ header nav ul li {
   /* MENU DEROULANTS */
 }
 
-header nav ul li ul {
-  display: none;
-  position: absolute;
+header nav ul li .nav-deroulant {
+  display: block;
   overflow: none;
-  background-color: #24252A;
   -webkit-transition: 0.2s ease;
   transition: 0.2s ease;
 }
 
-header nav ul li ul li {
+header nav ul li .nav-deroulant li {
   width: 100%;
+  background-color: #24252a50;
 }
 
-header nav ul li ul li:hover {
+header nav ul li .nav-deroulant li:hover {
   -webkit-transition: 0.15s ease-in;
   transition: 0.15s ease-in;
   background-color: #13aff0;
   cursor: pointer;
 }
 
-header nav ul li ul li a {
+header nav ul li .nav-deroulant li a {
   margin-left: 0px;
   width: 100%;
   white-space: nowrap;
   border-radius: 0px;
-}
-
-header nav ul li:hover ul, header nav ul li:focus-within ul {
-  display: block;
 }
 
 .sticky {
@@ -244,6 +239,19 @@ footer .footer_titles i:hover {
   background-color: white;
 }
 
+@media (min-width: 850px) {
+  header nav ul li .nav-deroulant {
+    display: none;
+    position: absolute;
+    overflow: none;
+    background-color: #24252A;
+  }
+  header nav ul li:hover ul,
+  header nav ul li:focus-within ul {
+    display: block;
+  }
+}
+
 @media (max-width: 1220px) {
   header {
     -webkit-box-pack: center;
@@ -289,7 +297,7 @@ footer .footer_titles i:hover {
         -ms-flex-direction: column;
             flex-direction: column;
     background-color: rgba(35, 36, 41, 0.7);
-    width: 30%;
+    width: 50%;
     height: 100%;
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -758,6 +766,30 @@ footer .footer_titles i:hover {
 
 /* MEDIA QUERIES */
 /* Tablette */
+@media (max-width: 768px) {
+  /* VIDEO */
+  .gallerie-videos {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    padding: 20px;
+  }
+  /* PHOTOS */
+  .gallerie-photo {
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+    grid-gap: 20px;
+    padding: 20px;
+  }
+  .gallerie-photo .img4 {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    -ms-grid-column-span: 2;
+        grid-column-end: span 2;
+    -ms-grid-row: 5;
+        grid-row-start: 5;
+  }
+}
+
 /* PHONE */
 .img-slider {
   position: relative;

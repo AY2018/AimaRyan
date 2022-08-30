@@ -49,7 +49,6 @@ header{
         .current {
             background-color: #13aff0;
         }
-
         ul {
             margin: 0;
             padding: 0;
@@ -63,15 +62,13 @@ header{
                 margin-right: 5px;
 
                 /* MENU DEROULANTS */
-                ul {
-                    display: none;
-                    position: absolute;
+                .nav-deroulant {
+                    display: block;
                     overflow: none;
-                    background-color: #24252A;
                     transition: 0.2s ease;
-                    
                     li{
                         width: 100%;
+                        background-color: #24252a50;
                         &:hover {
                             transition: 0.15s ease-in;
                             background-color: #13aff0;
@@ -84,10 +81,6 @@ header{
                             border-radius: 0px;
                             }
                     }
-                }
-    
-                &:hover ul, &:focus-within ul {
-                    display: block;
                 }
             }
         }
@@ -176,6 +169,23 @@ footer{
 }
 
 
+@media(min-width:850px){
+    header{
+        nav{ul{li{
+            .nav-deroulant {
+                    display: none;
+                    position: absolute;
+                    overflow: none;
+                    background-color: #24252A;
+                }
+            &:hover ul,
+            &:focus-within ul {
+                display: block;
+            }
+        }}}
+    }
+}
+
 @media(max-width:1220px){
     header{
         justify-content: center;
@@ -213,7 +223,7 @@ footer{
                 top: 0;
                 flex-direction: column;
                 background-color: hsla(230, 8%, 15%, 0.7);
-                width: 30%;
+                width: 50%;
                 height: 100%;
                 align-items: center;
                 transition: 0.3s;
@@ -279,6 +289,7 @@ footer{
                 left: 20px;
             }
         }
+
 
         footer {
             .footer_titles{

@@ -88,7 +88,25 @@
 
 /* MEDIA QUERIES */
 /* Tablette */
-@media(max-width:768px) {}
+@media(max-width:768px) {
+    /* VIDEO */
+    .gallerie-videos{
+        grid-template-columns: auto;
+        padding: 20px;
+    }
+
+    /* PHOTOS */
+    .gallerie-photo{
+        grid-template-columns: auto auto;
+        grid-gap: 20px;
+        padding: 20px;
+        .img4{
+            grid-column-start: 1;
+            grid-column-end: span 2;
+            grid-row-start: 5;
+        }
+    }
+}
 
 /* PHONE */
 
