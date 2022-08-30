@@ -176,7 +176,7 @@ footer {
 footer p {
   color: #b4bbc1;
   text-align: center;
-  width: 25%;
+  margin-right: 50px;
 }
 
 footer .footer_titles {
@@ -199,9 +199,9 @@ footer .footer_titles {
 
 footer .footer_titles a {
   color: #b4bbc1;
+  margin-right: 50px;
   font-size: 16px;
   text-align: center;
-  width: 25%;
 }
 
 footer .footer_titles a:hover {
@@ -329,6 +329,12 @@ footer .footer_titles i:hover {
   header .logo {
     text-align: center;
   }
+  footer a, footer p {
+    width: 25%;
+    margin-right: 0px;
+    text-align: center;
+    white-space: nowrap;
+  }
 }
 
 /* PHONE */
@@ -342,6 +348,16 @@ footer .footer_titles i:hover {
   }
   header .hamburger {
     left: 20px;
+  }
+  footer .footer_titles a, footer .footer_titles p, footer .footer_titles i {
+    font-size: 12px;
+  }
+  footer .footer_titles a, footer .footer_titles p {
+    width: 22%;
+    margin: auto;
+  }
+  footer .footer_titles .fIcon {
+    width: auto;
   }
 }
 
