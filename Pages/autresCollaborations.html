@@ -14,35 +14,42 @@
 <body>
     <!-- HEADER -->
     <header>
-
+    
         <!-- LOGO -->
         <div class="logo">
             <a href="./main.html">
                 <h1>Alma Ryan <span class="description_logo"> - Danseuse & Professeur de danse</span></h1>
             </a>
         </div>
-
+    
         <!-- MENU -->
         <nav>
-            <ul>
-                <li><a href="./main.html">Accueil</a>
-                <li><a href="./biographie.html">Biographie</a>
-                <li><a href="./pedagogie.html">Pédagogie</a>
-                <li><a href="./scene.html">Scène <i class="fa-solid fa-angle-down"></i></a>
-                    <ul>
-                        <li><a href="./autresCollaborations.html" class="current">Autres collaborations</a></li>
+            <ul class="nav-menu">
+                <li class="nav-link"><a href="./main.html" >Accueil</a>
+                <li class="nav-link"><a href="./biographie.html">Biographie</a>
+                <li class="nav-link"><a href="./pedagogie.html">Pédagogie</a>
+                <li class="nav-link nav-link1"><a id="golink" href="./scene.html">Scène <i
+                            class="fa-solid fa-angle-down"></i></a>
+                    <ul class="nav-deroulant1">
+                        <li class="nav-link"><a class="current" href="./autresCollaborations.html">Autres collaborations</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Galerie <i class="fa-solid fa-angle-down"></i></a>
+                <li class="nav-link"><a href="#">Galerie <i class="fa-solid fa-angle-down"></i></a>
                     <ul>
-                        <li><a href="./photos.html">Photos</a></li>
-                        <li><a href="./videos.html">Vidéos</a></li>
+                        <li class="nav-link"><a href="./photos.html">Photos</a></li>
+                        <li class="nav-link"><a href="./videos.html">Vidéos</a></li>
                     </ul>
                 </li>
-                <li><a href="./agenda.html">Agenda</a>
-                <li><a href="./contact.html">Contact</a>
+                <li class="nav-link"><a href="./agenda.html">Agenda</a>
+                <li class="nav-link"><a href="./contact.html">Contact</a>
             </ul>
-
+    
+            <!-- Hamburger Menu for Tablette and Phone -->
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </nav>
     </header>
 

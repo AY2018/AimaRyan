@@ -61,12 +61,14 @@ header{
                 position: relative;
                 width: max-content;
                 margin-right: 5px;
+
+                /* MENU DEROULANTS */
                 ul {
                     display: none;
                     position: absolute;
                     overflow: auto;
                     background-color: #24252A;
-                    border-radius: 20px;
+                    transition: 0.2s ease;
                     li{
                         width: 100%;
                         &:hover {
@@ -78,6 +80,7 @@ header{
                             margin-left: 0px;
                             width: 100%;
                             white-space: nowrap;
+                            border-radius: 0px;
                             }
                     }
                 }
@@ -112,10 +115,12 @@ footer{
     height: 10vh;
     display: flex;
     justify-content: center;
+    align-items: center;
     background-color: #24252A;
     p{
         color: #b4bbc1;
-        margin-right: 50px;
+        text-align: center;
+        width: 25%;
     }
     .footer_titles{
         display: flex;
@@ -127,7 +132,8 @@ footer{
         a{
             color: #b4bbc1;
             font-size: 16px;
-            margin-right: 50px;
+            text-align: center;
+            width: 25%;
             &:hover{
                 text-decoration: underline;
                 color: white;
@@ -169,13 +175,19 @@ footer{
 }
 
 
-@media(max-width:768px){
+@media(max-width:1220px){
     header{
         justify-content: center;
+        .logo{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
         .hamburger {
                 display: block;
                 position: absolute;
-                right: 60px;
+                left: 50px;
                 top: 20px;
             }
         
@@ -196,28 +208,66 @@ footer{
             .nav-menu {
                 position: fixed;
                 padding-top: 60px;
-                right: -100%;
+                left: -100%;
                 top: 0;
                 flex-direction: column;
                 background-color: hsla(230, 8%, 15%, 0.7);
-                width: 70%;
+                width: 30%;
                 height: 100%;
                 align-items: center;
                 transition: 0.3s;
+                a{
+                    border-radius: 0px;
+                    margin: 0px;
+                    &:hover{
+                        background-color: none;
+                    }
+                }
                 li {
-                    margin: 16px 0;
+                    width: 100%;
                     ul{
                         position: relative;
                         width: 100%;
+                        background-color: transparent;
+                        border-radius: 0px;
+                        background-color: #24252A;
                     }
                 }
             }
             .active{
-                right: 0;
+                left: 0;
             }
             .descend{
                 margin-top: 20px;
                 transition: 0.3s ease-in;
             }
     }
+}
+
+/* Tablette */
+@media(max-width:768px){
+    header{
+        .logo{
+            text-align: center;
+        }
+    }
+}
+
+/* PHONE */
+
+@media(max-width:530px){
+    header {
+            .logo {
+                .description_logo {
+                    white-space: nowrap;
+                    font-size: 13px;
+                }
+                .tire {
+                    display: none;
+                }
+            }
+            .hamburger{
+                left: 20px;
+            }
+        }
 }

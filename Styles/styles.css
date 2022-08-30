@@ -109,6 +109,7 @@ header nav ul li {
   width: -moz-max-content;
   width: max-content;
   margin-right: 5px;
+  /* MENU DEROULANTS */
 }
 
 header nav ul li ul {
@@ -116,7 +117,8 @@ header nav ul li ul {
   position: absolute;
   overflow: auto;
   background-color: #24252A;
-  border-radius: 20px;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
 }
 
 header nav ul li ul li {
@@ -134,6 +136,7 @@ header nav ul li ul li a {
   margin-left: 0px;
   width: 100%;
   white-space: nowrap;
+  border-radius: 0px;
 }
 
 header nav ul li:hover ul, header nav ul li:focus-within ul {
@@ -164,12 +167,16 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #24252A;
 }
 
 footer p {
   color: #b4bbc1;
-  margin-right: 50px;
+  text-align: center;
+  width: 25%;
 }
 
 footer .footer_titles {
@@ -193,7 +200,8 @@ footer .footer_titles {
 footer .footer_titles a {
   color: #b4bbc1;
   font-size: 16px;
-  margin-right: 50px;
+  text-align: center;
+  width: 25%;
 }
 
 footer .footer_titles a:hover {
@@ -236,8 +244,20 @@ footer .footer_titles i:hover {
   background-color: white;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1220px) {
   header {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  header .logo {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -245,7 +265,7 @@ footer .footer_titles i:hover {
   header .hamburger {
     display: block;
     position: absolute;
-    right: 60px;
+    left: 50px;
     top: 20px;
   }
   header .active0 .bar:nth-child(2) {
@@ -262,14 +282,14 @@ footer .footer_titles i:hover {
   header .nav-menu {
     position: fixed;
     padding-top: 60px;
-    right: -100%;
+    left: -100%;
     top: 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     background-color: rgba(35, 36, 41, 0.7);
-    width: 70%;
+    width: 30%;
     height: 100%;
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -277,20 +297,51 @@ footer .footer_titles i:hover {
     -webkit-transition: 0.3s;
     transition: 0.3s;
   }
+  header .nav-menu a {
+    border-radius: 0px;
+    margin: 0px;
+  }
+  header .nav-menu a:hover {
+    background-color: none;
+  }
   header .nav-menu li {
-    margin: 16px 0;
+    width: 100%;
   }
   header .nav-menu li ul {
     position: relative;
     width: 100%;
+    background-color: transparent;
+    border-radius: 0px;
+    background-color: #24252A;
   }
   header .active {
-    right: 0;
+    left: 0;
   }
   header .descend {
     margin-top: 20px;
     -webkit-transition: 0.3s ease-in;
     transition: 0.3s ease-in;
+  }
+}
+
+/* Tablette */
+@media (max-width: 768px) {
+  header .logo {
+    text-align: center;
+  }
+}
+
+/* PHONE */
+@media (max-width: 530px) {
+  header .logo .description_logo {
+    white-space: nowrap;
+    font-size: 13px;
+  }
+  header .logo .tire {
+    display: none;
+  }
+  header .hamburger {
+    left: 20px;
   }
 }
 
