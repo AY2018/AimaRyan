@@ -257,6 +257,13 @@ footer{
 
 /* Tablette */
 @media(max-width:768px){
+    .sticky2 {
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: rgba(37, 37, 37, 0.884);
+            z-index: 9999;
+        }
     header{
         .logo{
             text-align: center;
