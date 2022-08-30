@@ -1302,4 +1302,127 @@ footer .footer_titles i:hover {
 }
 
 /* PHONE */
+.main_slider_container {
+  background-color: #252525;
+}
+
+.main_slider_container .slideshow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 100%;
+}
+
+.main_slider_container .slideshow .swiper {
+  width: auto;
+  height: 80vh;
+  background-color: #252525;
+}
+
+.main_slider_container .slideshow .swiper img {
+  height: 100%;
+  width: auto;
+}
+
+.main_slider_container .slideshow .swiper .slide_horizontale {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.main_slider_container .slideshow .swiper .swiper-wrapper {
+  background-color: gray;
+}
+
+.main_slider_container .slideshow .swiper .swiper-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  width: 50%;
+  background-color: #252525;
+}
+
+.main_slider_container .slideshow .swiper .swiper-slide a {
+  position: absolute;
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+  text-align: center;
+  padding: 13px 20px;
+  background-color: transparent;
+  border: solid 2px white;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  -webkit-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
+}
+
+.main_slider_container .slideshow .swiper .swiper-slide a:hover {
+  cursor: pointer;
+  background-color: whitesmoke;
+  color: black;
+}
+
+.main_slider_container .slideshow .swiper .swiper-slide .redBtn {
+  color: #ce031a;
+  border: solid 2px #ce031a;
+  -webkit-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
+}
+
+.main_slider_container .slideshow .swiper .swiper-slide .redBtn:hover {
+  cursor: pointer;
+  background-color: #ce031a;
+  color: white;
+}
+
+.main_slider_container .slideshow .swiper .swiper-pagination-bullet-active {
+  background-color: white;
+}
+
+.main_slider_container .slideshow .swiper .swiper-button-prev,
+.main_slider_container .slideshow .swiper .swiper-button-next {
+  color: #13aff0;
+}
+
+.main_header {
+  background-color: #252525;
+}
+
+/* MEDIA QUERIES */
+/* Tablette */
+@media (max-width: 768px) {
+  .main_slider_container .slideshow .swiper {
+    width: auto;
+    height: 80vh;
+  }
+  .main_slider_container .slideshow .swiper img {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .main_slider_container .slideshow .swiper .slide_horizontale {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .main_slider_container .slideshow .swiper .slide_horizontale2 {
+    -o-object-position: 10% bottom;
+       object-position: 10% bottom;
+  }
+}
+
+/* PHONE */
 /*# sourceMappingURL=styles.css.map */
