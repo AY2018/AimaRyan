@@ -10,6 +10,14 @@
   font-family: "Open Sans", sans-serif;
 }
 
+main {
+  min-height: 80vh;
+}
+
+html, body {
+  height: 100%;
+}
+
 li {
   list-style: none;
 }
@@ -34,6 +42,7 @@ header {
       -ms-flex-align: center;
           align-items: center;
   padding: 8px 80px;
+  height: 10vh;
   width: 100%;
   position: relative;
   z-index: 9999;
@@ -139,10 +148,16 @@ header nav ul li:hover ul, header nav ul li:focus-within ul {
   z-index: 9999;
 }
 
+/* MAIN */
+.main-modif {
+  height: auto;
+}
+
 /* FOOTER */
 footer {
   width: 100%;
   padding: 10px;
+  height: 10vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -193,6 +208,15 @@ footer .footer_titles i {
 
 footer .footer_titles i:hover {
   color: white;
+}
+
+.modif_footer {
+  position: absolute;
+  bottom: 0;
+}
+
+.modif_footer2 {
+  height: auto;
 }
 
 /* RESPONSIVE HEADER */
@@ -278,7 +302,6 @@ footer .footer_titles i:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 280px;
   padding: 10px 80px;
 }
 
@@ -290,6 +313,7 @@ footer .footer_titles i:hover {
 
 .biographie_content .biographie_texte {
   width: 75%;
+  height: auto;
   font-family: 'Open Sans';
   color: #8e8e8e;
   font-size: 12px;
@@ -410,7 +434,6 @@ footer .footer_titles i:hover {
   -ms-grid-columns: auto auto auto;
       grid-template-columns: auto auto auto;
   grid-gap: 30px;
-  margin-bottom: -30px;
 }
 
 .gallerie-scene img {
@@ -514,7 +537,6 @@ footer .footer_titles i:hover {
   -ms-grid-columns: auto auto;
       grid-template-columns: auto auto;
   grid-gap: 20px;
-  margin-bottom: -30px;
 }
 
 .gallerie-videos .gallerie_videoYtb {
@@ -752,17 +774,16 @@ footer .footer_titles i:hover {
   position: relative;
   z-index: 555;
   margin: auto;
-  width: 95%;
-  height: 80vh;
+  width: 98%;
+  height: 75vh;
   background-color: #424242;
-  margin-bottom: -30px;
+  margin-top: 2.5vh;
   /* Contact - Image*/
   /* Contact - Form */
 }
 
 .contact_section .contact_image {
   height: 100%;
-  background-color: blue;
 }
 
 .contact_section .contact_image img {
@@ -858,7 +879,7 @@ footer .footer_titles i:hover {
 
 .main_slider_container .slideshow .swiper {
   width: auto;
-  height: 82vh;
+  height: 80vh;
 }
 
 .main_slider_container .slideshow .swiper img {
@@ -927,10 +948,6 @@ footer .footer_titles i:hover {
 .main_slider_container .slideshow .swiper .swiper-button-prev,
 .main_slider_container .slideshow .swiper .swiper-button-next {
   color: #13aff0;
-}
-
-.main_footer {
-  margin-top: 0px;
 }
 
 .main_header {

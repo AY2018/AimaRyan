@@ -1,9 +1,12 @@
+
+
 /* HEADER */
 header{
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 8px 80px;
+    height: 10vh;
     width: 100%;
     position: relative;
     z-index: 9999;
@@ -95,11 +98,18 @@ header{
     z-index: 9999;
 }
 
+/* MAIN */
+
+.main-modif {
+    height: auto;
+}
+
 /* FOOTER */
 
 footer{
     width: 100%;
     padding: 10px;
+    height: 10vh;
     display: flex;
     justify-content: center;
     background-color: #24252A;
@@ -133,6 +143,14 @@ footer{
     }
 }
 
+.modif_footer {
+    position: absolute;
+    bottom: 0;
+}
+
+.modif_footer2 {
+    height: auto;
+}
 
 /* RESPONSIVE HEADER */
 
