@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     <link rel="stylesheet" href="../Styles/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <title>Alma Ryan - Biographie</title>
 
     
@@ -56,7 +57,25 @@
     <!-- MAIN -->
     <main class="main-modif">
         <!-- Slider -->
-        <section class="slider"></section>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              
+              <div class="swiper-slide">
+                <img src="../img/bio/1.jpg" alt=""> 
+              </div>
+
+              <div class="swiper-slide">
+                <img src="../img/bio/2.jpg" alt=""> 
+              </div>
+
+              <div class="swiper-slide">
+                <img src="../img/bio/3.jpg" alt=""> 
+              </div>
+            
+            </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
 
         <!-- Content-->
         <section class="biographie_content">
@@ -154,9 +173,28 @@
         </div>
     </footer>
     
-    <!-- LES SCRIPTS JS-->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script src="../slider.js"></script>
-    <script src="../phoneMenu.js"></script>
+        <!-- LES SCRIPTS JS-->
+         <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+         <script src="../phoneMenu.js"></script>
+        <script>
+            var _swiper = new Swiper(".mySwiper", {
+                autoplay: {
+                 delay: 4000,
+                  disableOnInteraction: false,
+                 },
+                 
+                loop: true,
+              slidesPerView: 3,
+              spaceBetween: 0,
+              pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+              },
+              navigation: {
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
+            },
+            });
+          </script>
 </body>
 </html>
