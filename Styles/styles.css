@@ -657,6 +657,40 @@ footer .footer_titles i:hover {
 
 /* MEDIA QUERIES */
 /* Tablette */
+@media (max-width: 768px) {
+  .gallerie-scene {
+    padding: 20px 80px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+    grid-gap: 30px;
+    height: 80vh;
+  }
+  .gallerie-scene img {
+    height: 100%;
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+  }
+  .gallerie-scene img:hover {
+    cursor: pointer;
+    -webkit-box-shadow: 2px 2px 10px black;
+            box-shadow: 2px 2px 10px black;
+    -webkit-transform: scale(1.02);
+            transform: scale(1.02);
+  }
+  .gallerie-scene a {
+    position: absolute;
+    padding: 13px 20px;
+    background-color: rgba(84, 89, 95, 0.45);
+    border-radius: 15px;
+    color: white;
+    border: solid white 2px;
+    top: 50%;
+    left: 30%;
+  }
+}
+
 /* PHONE */
 /* PAGE COLLABORATIONS */
 .collab-section {
@@ -665,6 +699,7 @@ footer .footer_titles i:hover {
   display: -ms-flexbox;
   display: flex;
   height: 75vh;
+  margin-top: 20px;
   /* Vidéo Youtube */
   /* Description Vidéo youtube*/
 }
@@ -696,7 +731,51 @@ footer .footer_titles i:hover {
 
 /* MEDIA QUERIES */
 /* Tablette */
+@media (max-width: 997px) {
+  .collab-section {
+    padding: 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    /* Vidéo Youtube */
+    /* Description Vidéo youtube*/
+  }
+  .collab-section .videoYtb {
+    width: 400px;
+    margin-top: 15px;
+  }
+  .collab-section .videoYtb iframe {
+    width: 100%;
+    height: 100%;
+  }
+  .collab-section .descriptionvideoYtb {
+    margin-left: 0px;
+    margin-top: 30px;
+    width: 100%;
+  }
+}
+
 /* PHONE */
+@media (max-width: 530px) {
+  .collab-section {
+    padding: 0px;
+  }
+  .collab-section .videoYtb {
+    width: 100%;
+  }
+  .collab-section .videoYtb iframe {
+    width: 100%;
+    height: 100%;
+  }
+}
+
 /* PAGE PHOTO*/
 .gallerie-photo {
   padding: 20px 80px;

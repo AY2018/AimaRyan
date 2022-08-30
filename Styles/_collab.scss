@@ -4,14 +4,14 @@
     padding: 20px 80px;
     display: flex;
     height: 75vh;
+    margin-top: 20px;
     /* Vidéo Youtube */
     .videoYtb{
-    
         width: 40%;
         margin-top: 15px;
         iframe{
             width: 100%;
-            height:50%;
+            height: 50%;
         }
     }
     /* Description Vidéo youtube*/
@@ -34,8 +34,46 @@
 
 /* MEDIA QUERIES */
 /* Tablette */
-@media(max-width:768px) {}
+@media(max-width:997px) {
+    .collab-section {
+            padding: 20px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+    
+            /* Vidéo Youtube */
+            .videoYtb {
+                width: 400px;
+                margin-top: 15px;
+    
+                iframe {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+    
+            /* Description Vidéo youtube*/
+            .descriptionvideoYtb {
+                margin-left: 0px;
+                margin-top: 30px;
+                width: 100%;
+            }
+    
+            ;
+        }
+}
 
 /* PHONE */
 
-@media(max-width:530px) {}
+@media(max-width:530px) {
+    .collab-section {
+            padding: 0px;
+        .videoYtb {
+                width: 100%;
+        
+                iframe {
+                    width: 100%;
+                    height: 100%;
+                }
+            }}
+}
