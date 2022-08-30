@@ -424,6 +424,9 @@ footer .footer_titles i:hover {
   text-decoration: underline;
 }
 
+/* MEDIA QUERIES */
+/* Tablette */
+/* PHONE */
 /* PAGE PEDAGOGIE */
 .pedagogie_sliderAndText {
   padding: 20px 80px;
@@ -523,6 +526,43 @@ footer .footer_titles i:hover {
   color: #44649f;
 }
 
+/* MEDIA QUERIES */
+/* Tablette */
+@media (max-width: 768px) {
+  .pedagogie_sliderAndText {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .pedagogie_sliderAndText .slideshow, .pedagogie_sliderAndText .diplomes {
+    width: 100%;
+  }
+  .pedagogie_sliderAndText .slideshow .swiper {
+    height: auto;
+  }
+  .pedagogie_sliderAndText .diplomes p {
+    text-align: left;
+  }
+}
+
+/* PHONE */
+@media (max-width: 530px) {
+  .pedagogie_sliderAndText {
+    padding: 0px;
+  }
+  .pedagogie_sliderAndText .slideshow,
+  .pedagogie_sliderAndText .diplomes {
+    padding: 0px;
+  }
+  .pedagogie_sliderAndText .diplomes {
+    padding: 20px;
+  }
+  .objectifs_pedagogiques {
+    padding: 20px 30px;
+  }
+}
+
 .gallerie-scene {
   padding: 20px 80px;
   display: -ms-grid;
@@ -567,6 +607,9 @@ footer .footer_titles i:hover {
   cursor: pointer;
 }
 
+/* MEDIA QUERIES */
+/* Tablette */
+/* PHONE */
 /* PAGE COLLABORATIONS */
 .collab-section {
   padding: 20px 80px;
@@ -603,6 +646,9 @@ footer .footer_titles i:hover {
   bottom: 0;
 }
 
+/* MEDIA QUERIES */
+/* Tablette */
+/* PHONE */
 /* PAGE PHOTO*/
 .gallerie-photo {
   padding: 20px 80px;
@@ -710,6 +756,9 @@ footer .footer_titles i:hover {
   height: 5%;
 }
 
+/* MEDIA QUERIES */
+/* Tablette */
+/* PHONE */
 .img-slider {
   position: relative;
   width: 800px;
@@ -864,6 +913,9 @@ footer .footer_titles i:hover {
   }
 }
 
+/* MEDIA QUERIES */
+/* Tablette */
+/* PHONE */
 /* PAGE CONTACT */
 .contact_section {
   position: relative;
@@ -958,6 +1010,9 @@ footer .footer_titles i:hover {
   margin-top: 60px;
 }
 
+/* MEDIA QUERIES */
+/* Tablette */
+/* PHONE */
 .main_slider_container {
   background-color: #d3d3d3;
 }
@@ -1054,4 +1109,8 @@ footer .footer_titles i:hover {
 .main_header {
   background-color: #252525;
 }
+
+/* MEDIA QUERIES */
+/* Tablette */
+/* PHONE */
 /*# sourceMappingURL=styles.css.map */

@@ -74,9 +74,40 @@
 /* MEDIA QUERIES */
 /* Tablette */
 @media(max-width:768px) {
+    .pedagogie_sliderAndText{
+        flex-direction: column;
+        .slideshow, .diplomes{
+            width: 100%;
+        }
+        .slideshow{
+            .swiper{
+                height: auto;
+            }
+        }
+        .diplomes{
+            p{
+                text-align: left;
+            }
+        }
+    }
 }
+
 
 /* PHONE */
 
 @media(max-width:530px) {
+    .pedagogie_sliderAndText {
+        padding: 0px;
+            .slideshow,
+            .diplomes {
+                padding: 0px;
+            }
+
+            .diplomes{
+                padding: 20px;
+            }
+        }
+    .objectifs_pedagogiques{
+        padding: 20px 30px;
+    }
 }
