@@ -121,7 +121,7 @@ header nav ul li .nav-deroulant {
 
 header nav ul li .nav-deroulant li {
   width: 100%;
-  background-color: #24252a50;
+  background-color: #24252aa2;
 }
 
 header nav ul li .nav-deroulant li:hover {
@@ -377,7 +377,7 @@ footer .footer_titles i:hover {
 }
 
 .swiper {
-  width: auto;
+  width: 100%;
   height: 35vh;
 }
 
@@ -409,39 +409,72 @@ footer .footer_titles i:hover {
   display: none;
 }
 
-.biographie_content {
+.bio_main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.bio_main .biographie_content {
+  width: 90%;
   padding: 10px 80px;
 }
 
-.biographie_content .biographie_picture {
-  width: 20%;
+.bio_main .biographie_content .biographie_picture {
+  width: 200px;
+  float: left;
   margin-right: 20px;
   margin-top: 10px;
 }
 
-.biographie_content .biographie_texte {
-  width: 75%;
+.bio_main .biographie_content .biographie_texte {
   height: auto;
   font-family: 'Open Sans';
   color: #8e8e8e;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 300;
 }
 
-.biographie_content .biographie_texte p {
+.bio_main .biographie_content .biographie_texte p {
   margin-top: 10px;
 }
 
-.biographie_content .biographie_texte p a {
+.bio_main .biographie_content .biographie_texte p a {
   text-decoration: underline;
 }
 
 /* MEDIA QUERIES */
 /* Tablette */
+@media (max-width: 768px) {
+  .bio_main .biographie_content {
+    width: 100%;
+    padding: 40px;
+  }
+}
+
 /* PHONE */
+@media (max-width: 530px) {
+  .bio_main .biographie_content {
+    padding: 20px;
+  }
+  .bio_main .biographie_content .biographie_picture {
+    width: 150px;
+  }
+  .bio_main .biographie_content .biographie_texte {
+    font-size: 12px;
+  }
+}
+
 /* PAGE PEDAGOGIE */
 .pedagogie_sliderAndText {
   padding: 20px 80px;
