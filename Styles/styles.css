@@ -1072,10 +1072,9 @@ footer .footer_titles i:hover {
   position: relative;
   z-index: 555;
   margin: auto;
-  width: 98%;
+  width: 100%;
   height: 75vh;
   background-color: #424242;
-  margin-top: 2.5vh;
   /* Contact - Image*/
   /* Contact - Form */
 }
