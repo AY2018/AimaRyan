@@ -950,8 +950,14 @@ footer .footer_titles i:hover {
 }
 
 .main_slider_container .slideshow .swiper img {
-  height: 90%;
+  height: 100%;
   width: auto;
+}
+
+.main_slider_container .slideshow .swiper .slide_horizontale {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .main_slider_container .slideshow .swiper .swiper-wrapper {
