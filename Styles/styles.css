@@ -142,7 +142,6 @@ header nav ul li:hover ul, header nav ul li:focus-within ul {
 /* FOOTER */
 footer {
   width: 100%;
-  margin-top: 50px;
   padding: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -151,7 +150,6 @@ footer {
       -ms-flex-pack: center;
           justify-content: center;
   background-color: #24252A;
-  margin-bottom: -100px;
 }
 
 footer p {
@@ -494,7 +492,6 @@ footer .footer_titles i:hover {
   display: grid;
   -ms-grid-columns: auto auto auto;
       grid-template-columns: auto auto auto;
-  margin-bottom: -30px;
 }
 
 .gallerie-photo img {
