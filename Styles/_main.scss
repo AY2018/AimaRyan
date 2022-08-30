@@ -1,5 +1,5 @@
 .main_slider_container{
-    background-color: #d3d3d3;
+    background-color: #252525;
   
     .slideshow {
             display: flex;
@@ -9,6 +9,7 @@
             .swiper {
                 width:auto;
                 height: 80vh;
+                background-color: #252525;
     
                 img {
                     height: 100%;
@@ -29,6 +30,7 @@
                     justify-content: center;
                     position: relative;
                     width: 50%;
+                    background-color: #252525;
                     a{
                         position: absolute;
                         transform: translateX(0%);
@@ -78,7 +80,30 @@
 
 /* MEDIA QUERIES */
 /* Tablette */
-@media(max-width:768px) {}
+@media(max-width:768px) {
+    .main_slider_container {
+            .slideshow {
+                .swiper {
+                    width: auto;
+                    height: 80vh;
+    
+                    img {
+                        height: 100%;
+                        width: 100%;
+                        object-fit: contain;
+                    }
+    
+                    .slide_horizontale {
+                        object-fit: cover;
+                    }
+
+                    .slide_horizontale2{
+                        object-position: 10% bottom;
+                    }
+                }
+            }
+        }
+}
 
 /* PHONE */
 

@@ -1086,7 +1086,7 @@ footer .footer_titles i:hover {
 /* Tablette */
 /* PHONE */
 .main_slider_container {
-  background-color: #d3d3d3;
+  background-color: #252525;
 }
 
 .main_slider_container .slideshow {
@@ -1102,6 +1102,7 @@ footer .footer_titles i:hover {
 .main_slider_container .slideshow .swiper {
   width: auto;
   height: 80vh;
+  background-color: #252525;
 }
 
 .main_slider_container .slideshow .swiper img {
@@ -1131,6 +1132,7 @@ footer .footer_titles i:hover {
           justify-content: center;
   position: relative;
   width: 50%;
+  background-color: #252525;
 }
 
 .main_slider_container .slideshow .swiper .swiper-slide a {
@@ -1184,5 +1186,26 @@ footer .footer_titles i:hover {
 
 /* MEDIA QUERIES */
 /* Tablette */
+@media (max-width: 768px) {
+  .main_slider_container .slideshow .swiper {
+    width: auto;
+    height: 80vh;
+  }
+  .main_slider_container .slideshow .swiper img {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .main_slider_container .slideshow .swiper .slide_horizontale {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .main_slider_container .slideshow .swiper .slide_horizontale2 {
+    -o-object-position: 10% bottom;
+       object-position: 10% bottom;
+  }
+}
+
 /* PHONE */
 /*# sourceMappingURL=styles.css.map */
