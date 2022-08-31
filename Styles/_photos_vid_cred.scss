@@ -40,8 +40,8 @@
     display: grid;
     grid-template-columns: auto auto auto auto;
     grid-template-rows: auto auto auto auto;
-    grid-gap: 20px;
-    margin-bottom: -30px;
+    grid-gap: 40px;
+    padding-bottom: 40px;
 
     div{
         transition: 0.2s ease;
@@ -59,7 +59,7 @@
         height: 10%;
         padding: 0px 15px;
         text-align: center;
-        font-size: 13px;
+        font-size: 12px;
     }
 
     .i1{
@@ -106,8 +106,27 @@
             grid-row-start: 5;
         }
     }
+
+    /* CREDITS */
+        .credits_galerie {
+            padding: 20px 30px;
+            display: flex;
+                align-items: center;
+                flex-direction: column;
+                justify-content: center;
+                gap: 20px;
+                div{
+                    width: 80%;
+                }
+        }
 }
 
 /* PHONE */
 
-@media(max-width:530px) {}
+@media(max-width:600px) {
+    .credits_galerie {
+        padding: 20px;
+        div{
+            width: 100%;
+        }
+}}
