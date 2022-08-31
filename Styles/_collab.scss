@@ -3,12 +3,10 @@
 .collab-section{
     padding: 20px 80px;
     display: flex;
-    height: 75vh;
-    margin-top: 20px;
+    height: 80vh;
     /* Vidéo Youtube */
     .videoYtb{
         width: 40%;
-        margin-top: 15px;
         iframe{
             width: 100%;
             height: 50%;
@@ -17,6 +15,7 @@
     /* Description Vidéo youtube*/
     .descriptionvideoYtb{
         margin-left: 20px;
+        margin-top: 20px;
         color: rgb(143, 143, 143);
         font-size: 14px;
         line-height: 1.6em;
@@ -67,7 +66,6 @@
 
 @media(max-width:530px) {
     .collab-section {
-            padding: 0px;
         .videoYtb {
                 width: 100%;
         

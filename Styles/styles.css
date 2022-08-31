@@ -698,15 +698,13 @@ footer .footer_titles i:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 75vh;
-  margin-top: 20px;
+  height: 80vh;
   /* Vidéo Youtube */
   /* Description Vidéo youtube*/
 }
 
 .collab-section .videoYtb {
   width: 40%;
-  margin-top: 15px;
 }
 
 .collab-section .videoYtb iframe {
@@ -716,6 +714,7 @@ footer .footer_titles i:hover {
 
 .collab-section .descriptionvideoYtb {
   margin-left: 20px;
+  margin-top: 20px;
   color: #8f8f8f;
   font-size: 14px;
   line-height: 1.6em;
@@ -764,9 +763,6 @@ footer .footer_titles i:hover {
 
 /* PHONE */
 @media (max-width: 530px) {
-  .collab-section {
-    padding: 0px;
-  }
   .collab-section .videoYtb {
     width: 100%;
   }
