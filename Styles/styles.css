@@ -883,6 +883,9 @@ footer .footer_titles i:hover {
 }
 
 @media (min-width: 769px) and (max-width: 938px) {
+  .gallerie-photo {
+    height: 80vh;
+  }
   .versionV {
     display: none;
   }
