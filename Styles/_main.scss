@@ -49,15 +49,13 @@
                             color: black;
                         }
                     }
+                    .link_vertical{
+                        top: 50%;
+                        left: 0%;
+                        transform: none;
+                    }
                     .redBtn{
-                        color: #ce031a;
-                        border: solid 2px #ce031a;
-                        transition: 0.2s ease-in;
-                            &:hover {
-                                cursor: pointer;
-                                background-color: #ce031a;
-                                color: white;
-                            }
+                        background-color: #ce031a80;
                     }
                 }
     

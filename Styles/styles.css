@@ -267,7 +267,7 @@ footer .footer_titles i:hover {
     display: block;
     position: absolute;
     left: 50px;
-    top: 20px;
+    top: 30px;
   }
   header .active0 .bar:nth-child(2) {
     opacity: 0;
@@ -928,6 +928,13 @@ footer .footer_titles i:hover {
   }
 }
 
+@media (max-width: 320px) {
+  .body_photo .sticky {
+    position: relative;
+    z-index: 1;
+  }
+}
+
 .img-slider {
   position: relative;
   width: 800px;
@@ -1317,17 +1324,15 @@ footer .footer_titles i:hover {
   color: black;
 }
 
-.main_slider_container .slideshow .swiper .swiper-slide .redBtn {
-  color: #ce031a;
-  border: solid 2px #ce031a;
-  -webkit-transition: 0.2s ease-in;
-  transition: 0.2s ease-in;
+.main_slider_container .slideshow .swiper .swiper-slide .link_vertical {
+  top: 50%;
+  left: 0%;
+  -webkit-transform: none;
+          transform: none;
 }
 
-.main_slider_container .slideshow .swiper .swiper-slide .redBtn:hover {
-  cursor: pointer;
-  background-color: #ce031a;
-  color: white;
+.main_slider_container .slideshow .swiper .swiper-slide .redBtn {
+  background-color: #ce031a80;
 }
 
 .main_slider_container .slideshow .swiper .swiper-pagination-bullet-active {

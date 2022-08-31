@@ -130,3 +130,13 @@
             width: 100%;
         }
 }}
+
+
+@media(max-width:320px){
+    .body_photo{
+        .sticky {
+                position: relative;
+                z-index: 1;
+            }
+    }
+}
