@@ -424,7 +424,7 @@ footer .footer_titles i:hover {
 }
 
 .bio_main .biographie_content .biographie_picture {
-  width: 200px;
+  width: 400px;
   float: left;
   margin-right: 20px;
   margin-top: 10px;
@@ -461,7 +461,7 @@ footer .footer_titles i:hover {
     padding: 20px;
   }
   .bio_main .biographie_content .biographie_picture {
-    width: 150px;
+    width: 250px;
   }
   .bio_main .biographie_content .biographie_texte {
     font-size: 12px;
@@ -1467,7 +1467,7 @@ footer .footer_titles i:hover {
 }
 
 .main_slider_container .slideshow .swiper .slide_vertical {
-  height: 100%;
+  height: 98%;
   -o-object-fit: cover;
      object-fit: cover;
 }
