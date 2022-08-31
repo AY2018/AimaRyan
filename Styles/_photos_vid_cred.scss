@@ -14,8 +14,6 @@
 }
 
 
-
-
 /* PAGE VIDEOS*/
 
 .gallerie-videos {
@@ -88,9 +86,31 @@
 
 /* MEDIA QUERIES */
 
+
+/*DESKTOP AND BIGGER*/
+@media(min-width:939px)
+{
+    .versionV{
+        display: none;
+    }
+
+    .versionH{
+        display: initial;
+    }
+}
+
+
 @media(min-width:769px) and (max-width: 938px){
     .gallerie-photo{
         height: 80vh;
+    }
+    
+    .versionV{
+        display: none;
+    }
+
+    .versionH{
+        display: initial;
     }
 }
 
@@ -100,6 +120,14 @@
     .gallerie-videos{
         grid-template-columns: auto;
         padding: 20px;
+    }
+
+    .versionV{
+        display: initial;
+    }
+
+    .versionH{
+        display: none;
     }
 
     /* PHOTOS */
