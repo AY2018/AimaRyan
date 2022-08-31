@@ -1103,7 +1103,7 @@ footer .footer_titles i:hover {
   z-index: 555;
   margin: auto;
   width: 100%;
-  height: 75vh;
+  height: 80vh;
   background-color: #424242;
   /* Contact - Image*/
   /* Contact - Form */
@@ -1185,14 +1185,55 @@ footer .footer_titles i:hover {
   background-color: #aeaeae;
 }
 
-/* Contact Footer */
-.contact_footer {
-  margin-top: 60px;
+/* MEDIA QUERIES */
+/* PC */
+@media (max-width: 1020px) {
+  .contact_section .contact_form {
+    width: 75%;
+    padding: 40px;
+  }
 }
 
-/* MEDIA QUERIES */
 /* Tablette */
-/* PHONE */
+@media (max-width: 768px) {
+  .contact_section .contact_form {
+    width: 100%;
+  }
+}
+
+/* Phone */
+@media (max-width: 560px) {
+  .contact_section .contact_form {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact_section .contact_form .name, .contact_section .contact_form .email {
+    width: 100%;
+    display: initial;
+    margin: 0;
+  }
+  .contact_section .contact_form .name input, .contact_section .contact_form .email input {
+    margin-top: 10px;
+  }
+  .contact_section .contact_form .email {
+    display: inline-block;
+    margin-top: 20px;
+  }
+  .contact_section .contact_form .form-btn, .contact_section .contact_form .text {
+    margin-top: 20px;
+  }
+  .contact_section .contact_form .text textarea {
+    height: 180px;
+    margin-top: 10px;
+  }
+}
+
 .myCalendar {
   padding: 20px;
 }
