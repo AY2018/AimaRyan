@@ -1,3 +1,8 @@
+#button_Right{
+    margin-left:45%;
+}
+
+
 .main_slider_container{
     background-color: #464646;
   
@@ -50,8 +55,8 @@
                         }
                     }
                     .redBtn{
-                        color: #ce031a;
-                        border: solid 2px #ce031a;
+                        color: white;
+                        border: solid 2px white;
                         transition: 0.2s ease-in;
                             &:hover {
                                 cursor: pointer;
