@@ -872,6 +872,12 @@ footer .footer_titles i:hover {
 }
 
 /* MEDIA QUERIES */
+@media (min-width: 768px) and (max-width: 938px) {
+  .gallerie-photo {
+    height: 80vh;
+  }
+}
+
 /* Tablette */
 @media (max-width: 768px) {
   /* VIDEO */
