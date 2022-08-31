@@ -1,5 +1,5 @@
 .main_slider_container{
-    background-color: #252525;
+    background-color: #464646;
   
     .slideshow {
             display: flex;
@@ -9,7 +9,7 @@
             .swiper {
                 width:auto;
                 height: 80vh;
-                background-color: #252525;
+                background-color: #464646;
     
                 img {
                     height: 100%;
@@ -30,7 +30,7 @@
                     justify-content: center;
                     position: relative;
                     width: 50%;
-                    background-color: #252525;
+                    background-color: #464646;
                     a{
                         position: absolute;
                         transform: translateX(0%);

@@ -39,7 +39,8 @@ header{
             border-radius: 20px;
             width: 100%;
             &:hover {
-                background-color: #13aff0;
+                color : #13aff0;
+                text-decoration: underline;
                 cursor: pointer;
             }
             .fa-angle-down{
@@ -47,7 +48,9 @@ header{
             }
         }
         .current {
-            background-color: #13aff0;
+            background-color: #ffffff;
+            color : #13aff0;
+            text-decoration: underline;
         }
         ul {
             margin: 0;
@@ -110,7 +113,7 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #24252A;
+    background-color: #252525;
     p{
         color: #b4bbc1;
         text-align: center;
