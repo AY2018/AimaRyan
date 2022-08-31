@@ -1365,6 +1365,37 @@ footer .footer_titles i:hover {
   margin-left: 45%;
 }
 
+.bgIMGparent {
+  position: relative;
+}
+
+.bgIMGchild {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-filter: brightness(0.4) blur(10px);
+  filter: brightness(0.4) blur(10px);
+  height: 100%;
+  z-index: -1;
+}
+
+.imgV1 {
+  background-image: url(../img/main1.jpg);
+}
+
+.imgV2 {
+  background-image: url(../img/img3-min.jpeg);
+}
+
+.imgV3 {
+  background-image: url(../img/img2-min.jpeg);
+}
+
 .main_slider_container {
   background-color: #464646;
 }
@@ -1392,6 +1423,12 @@ footer .footer_titles i:hover {
 
 .main_slider_container .slideshow .swiper .slide_horizontale {
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.main_slider_container .slideshow .swiper .slide_vertical {
+  height: 98%;
   -o-object-fit: cover;
      object-fit: cover;
 }
