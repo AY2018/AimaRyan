@@ -1,21 +1,23 @@
 /* PAGE PEDAGOGIE */
 
 .pedagogie_section{
-    padding: 60px 80px;
+    padding: 0px;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    width: 90%;
+    height: 80vh;
+    margin: 20px auto;
+    color: white;
 }
     /* 2 - Pédagogie texte 1*/
     .diplomes{
         p{
             margin-bottom: 15px;
-            color: rgb(143, 143, 143);
             a{
                 transition: .15s ease-in;
                 &:hover{
-                    color: #13aff0;
+                    color: white;
                     cursor: pointer;
                 }
             }
@@ -25,7 +27,6 @@
 /* 3 - Pédagogie texte 2 - Objectifs */
 
 .objectifs_pedagogiques{
-    color: rgb(143, 143, 143);
     margin-top: 40px;
     ul{
         li{
@@ -33,7 +34,8 @@
             margin-bottom: 10px;
             font-size: 14px;
             span{
-                color: #44649f;
+                color: #da828d;
+                font-weight: bold;
             }
         }
     }
@@ -42,36 +44,32 @@
 /* MEDIA QUERIES */
 
 /* MAIN */
-
-@media(min-width:1008px){
-    .main80vh {
-            height: 80vh;
-        }
-}
-/* Tablette */
-@media(max-width:768px) {
+@media(min-width:733px) and (max-width:768px){
     .pedagogie_section{
-        .diplomes{
-            width: 100%;
-            p{
-                text-align: left;
-            }
-        }
+        padding-bottom: 30px;
     }
 }
+
+@media(max-width:768px){
+    .pedagogie_section {
+            height: auto;
+        }
+}
+
+/* Tablette */
 
 
 /* PHONE */
 
-@media(max-width:530px) {
-    .pedagogie_section {
-        padding: 0px;
-            .diplomes{
-                padding: 20px;
-            }
-            .objectifs_pedagogiques{
-        padding: 20px 30px;
+@media(max-width:642px) {
+    .sticky_pedag{
+        position: fixed;
+            top: 0;
+            left: 0;
+            background-color: rgba(37, 37, 37, 0.884);
+            z-index: 9999;
     }
-        }
-    
 }
+
+/* STICKY */
+

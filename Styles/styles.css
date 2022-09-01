@@ -13,6 +13,17 @@
 html, body {
   height: 100%;
   min-height: 100% !important;
+  background-color: #aaa;
+  /*
+    e9d198
+
+    be923a
+
+    b86867
+
+    85343d
+    
+    */
 }
 
 li {
@@ -28,45 +39,121 @@ img {
   width: 100%;
 }
 
+/* LOGO ANIM*/
+/* ANIMATIONS */
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+/* STYLING */
+.logo_moving {
+  width: 60px;
+  margin: 0;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.logo_moving .arabesque {
+  overflow: auto;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  position: absolute;
+  -webkit-animation-name: spin;
+  -webkit-animation-duration: 40000ms;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-name: spin;
+  -moz-animation-duration: 40000ms;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+  -ms-animation-name: spin;
+  -ms-animation-duration: 40000ms;
+  -ms-animation-iteration-count: infinite;
+  -ms-animation-timing-function: linear;
+  fill: #85343d;
+}
+
+.logo_moving .second {
+  -webkit-animation-duration: 20000ms;
+  -moz-animation-duration: 20000ms;
+  -ms-animation-duration: 20000ms;
+  fill: #b04c4c;
+}
+
+.logo_moving .third {
+  -webkit-animation-duration: 9000ms;
+  -moz-animation-duration: 9000ms;
+  -ms-animation-duration: 9000ms;
+  width: 80%;
+  fill: #b86867;
+}
+
 /* HEADER */
 header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 8px 80px;
   height: 10vh;
   width: 100%;
   position: relative;
   z-index: 9999;
-  background-color: #252525;
+  background-color: #e9d198;
   /* LOGO */
   /* MENU */
 }
 
 header .logo {
-  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 header .logo h1 {
   font-size: 20px;
-  color: #13aff0;
+  color: #b04c4c;
 }
 
 header .logo h1 span {
   font-size: 15px;
-  color: #b4bbc1;
+  color: #be923a;
   font-weight: 600;
 }
 
 header nav a {
   padding: 10px 15px;
-  margin-left: 5px;
-  color: white;
+  color: #b86867;
   display: block;
   text-decoration: none;
   font-size: 14px;
@@ -74,22 +161,11 @@ header nav a {
   transition: 0.15s ease-in;
   border-radius: 20px;
   width: 100%;
-}
-
-header nav a:hover {
-  color: #13aff0;
-  text-decoration: underline;
-  cursor: pointer;
+  text-align: center;
 }
 
 header nav a .fa-angle-down {
   margin-left: 6px;
-}
-
-header nav .current {
-  background-color: #ffffff;
-  color: #13aff0;
-  text-decoration: underline;
 }
 
 header nav ul {
@@ -104,11 +180,7 @@ header nav ul {
 
 header nav ul li {
   float: left;
-  position: relative;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-  margin-right: 5px;
+  width: 100px;
   /* MENU DEROULANTS */
 }
 
@@ -121,14 +193,66 @@ header nav ul li .nav-deroulant {
 
 header nav ul li .nav-deroulant li {
   width: 100%;
-  background-color: #24252aa2;
+  background-color: #e9d198;
+}
+
+header nav ul li .nav-deroulant li:hover {
+  background-color: #b86867;
 }
 
 header nav ul li .nav-deroulant li a {
   margin-left: 0px;
+  text-align: left;
   width: 100%;
   white-space: nowrap;
   border-radius: 0px;
+}
+
+header nav ul li .nav-deroulant li:hover a {
+  color: #e9d198;
+}
+
+header nav ul .nav-link_notMenu {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav ul .nav-link_notMenu:hover a {
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+header nav ul .nav-link_notMenu .ligne_nav {
+  width: 90%;
+  position: absolute;
+  bottom: -5px;
+  display: none;
+  -webkit-transition: 0.15s ease-in;
+  transition: 0.15s ease-in;
+}
+
+header nav ul .nav-link_notMenu:hover .ligne_nav {
+  display: initial;
+}
+
+header nav ul .current .ligne_nav {
+  display: initial;
+}
+
+header nav ul .current a {
+  color: #be923a;
+  cursor: pointer;
+  font-weight: bold;
 }
 
 .sticky {
@@ -158,11 +282,11 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #252525;
+  background-color: #e9d198;
 }
 
 footer p {
-  color: #b4bbc1;
+  color: #b86867;
   text-align: center;
   margin-right: 50px;
 }
@@ -186,7 +310,7 @@ footer .footer_titles {
 }
 
 footer .footer_titles a {
-  color: #b4bbc1;
+  color: #b86867;
   margin-right: 50px;
   font-size: 16px;
   text-align: center;
@@ -198,7 +322,7 @@ footer .footer_titles a:hover {
 }
 
 footer .footer_titles i {
-  color: #b4bbc1;
+  color: #b86867;
   font-size: 30px;
 }
 
@@ -500,7 +624,7 @@ footer .footer_titles i:hover {
 
 /* PAGE PEDAGOGIE */
 .pedagogie_section {
-  padding: 60px 80px;
+  padding: 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -508,18 +632,18 @@ footer .footer_titles i:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 90%;
+  height: 80vh;
+  margin: 20px auto;
+  color: white;
 }
 
 /* 2 - Pédagogie texte 1*/
 .diplomes p {
   margin-bottom: 15px;
-  color: #8f8f8f;
 }
 
 .diplomes p a {
@@ -528,13 +652,12 @@ footer .footer_titles i:hover {
 }
 
 .diplomes p a:hover {
-  color: #13aff0;
+  color: white;
   cursor: pointer;
 }
 
 /* 3 - Pédagogie texte 2 - Objectifs */
 .objectifs_pedagogiques {
-  color: #8f8f8f;
   margin-top: 40px;
 }
 
@@ -545,40 +668,37 @@ footer .footer_titles i:hover {
 }
 
 .objectifs_pedagogiques ul li span {
-  color: #44649f;
+  color: #da828d;
+  font-weight: bold;
 }
 
 /* MEDIA QUERIES */
 /* MAIN */
-@media (min-width: 1008px) {
-  .main80vh {
-    height: 80vh;
+@media (min-width: 733px) and (max-width: 768px) {
+  .pedagogie_section {
+    padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .pedagogie_section {
+    height: auto;
   }
 }
 
 /* Tablette */
-@media (max-width: 768px) {
-  .pedagogie_section .diplomes {
-    width: 100%;
-  }
-  .pedagogie_section .diplomes p {
-    text-align: left;
-  }
-}
-
 /* PHONE */
-@media (max-width: 530px) {
-  .pedagogie_section {
-    padding: 0px;
-  }
-  .pedagogie_section .diplomes {
-    padding: 20px;
-  }
-  .pedagogie_section .objectifs_pedagogiques {
-    padding: 20px 30px;
+@media (max-width: 642px) {
+  .sticky_pedag {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(37, 37, 37, 0.884);
+    z-index: 9999;
   }
 }
 
+/* STICKY */
 .gallerie-scene {
   padding: 60px 80px;
   display: -ms-grid;
