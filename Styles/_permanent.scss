@@ -312,3 +312,15 @@ footer{
             }
         }
 }
+
+/* STICKY HEADERS*/
+
+@media(max-width:938px){
+    .sticky_photos{
+        position: fixed;
+            top: 0;
+            left: 0;
+            background-color: rgba(37, 37, 37, 0.884);
+            z-index: 9999;
+    }
+}
