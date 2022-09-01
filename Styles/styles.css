@@ -144,6 +144,10 @@ header nav ul li .nav-deroulant li a {
   height: auto;
 }
 
+.main80vh {
+  height: 80vh;
+}
+
 /* FOOTER */
 footer {
   width: 100%;
