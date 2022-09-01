@@ -4,45 +4,11 @@
     padding: 20px 80px;
     display: flex;
     align-items: center;
-    /* 1 - Pédagogie slideshow*/
-    .slideshow{
-        display: flex;
-        justify-content: flex-start;
-        width: 35%;
-        .swiper{
-            height: 60vh;
-            width: 100%;
-            img{
-                height: 80%;
-                width: 70%;
-            }
-            p{
-                margin-top: 10px;
-                color: grey;
-                font-size: 14px;
-            }
-        .swiper-slide{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-        }
-        .swiper-pagination-bullet-active{
-            margin-top: 50px;
-        }
-        .swiper-button-prev, .swiper-button-next{
-            color: #13aff0;
-        }
-        }
-    }
-
     /* 2 - Pédagogie texte 1*/
     .diplomes{
-        width: 65%;
         p{
             margin-bottom: 15px;
             color: rgb(143, 143, 143);
-            text-align: center;
             a{
                 transition: .15s ease-in;
                 &:hover{
@@ -57,7 +23,8 @@
 /* 3 - Pédagogie texte 2 - Objectifs */
 
 .objectifs_pedagogiques{
-    padding: 20px 80px;
+    padding: 0px 80px;
+    padding-bottom: 20px;
     color: rgb(143, 143, 143);
     ul{
         li{

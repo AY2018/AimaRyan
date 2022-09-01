@@ -477,68 +477,12 @@ footer .footer_titles i:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  /* 1 - Pédagogie slideshow*/
   /* 2 - Pédagogie texte 1*/
-}
-
-.pedagogie_sliderAndText .slideshow {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  width: 35%;
-}
-
-.pedagogie_sliderAndText .slideshow .swiper {
-  height: 60vh;
-  width: 100%;
-}
-
-.pedagogie_sliderAndText .slideshow .swiper img {
-  height: 80%;
-  width: 70%;
-}
-
-.pedagogie_sliderAndText .slideshow .swiper p {
-  margin-top: 10px;
-  color: grey;
-  font-size: 14px;
-}
-
-.pedagogie_sliderAndText .slideshow .swiper .swiper-slide {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.pedagogie_sliderAndText .slideshow .swiper .swiper-pagination-bullet-active {
-  margin-top: 50px;
-}
-
-.pedagogie_sliderAndText .slideshow .swiper .swiper-button-prev, .pedagogie_sliderAndText .slideshow .swiper .swiper-button-next {
-  color: #13aff0;
-}
-
-.pedagogie_sliderAndText .diplomes {
-  width: 65%;
 }
 
 .pedagogie_sliderAndText .diplomes p {
   margin-bottom: 15px;
   color: #8f8f8f;
-  text-align: center;
 }
 
 .pedagogie_sliderAndText .diplomes p a {
@@ -553,7 +497,8 @@ footer .footer_titles i:hover {
 
 /* 3 - Pédagogie texte 2 - Objectifs */
 .objectifs_pedagogiques {
-  padding: 20px 80px;
+  padding: 0px 80px;
+  padding-bottom: 20px;
   color: #8f8f8f;
 }
 
