@@ -875,13 +875,13 @@ footer .footer_titles i:hover {
 
 /* MEDIA QUERIES */
 /*DESKTOP AND BIGGER*/
-@media (min-width: 938px) and (max-width: 1157px) {
+@media (min-width: 1092px) and (max-width: 1157px) {
   .gallerie-photo {
     height: 80vh;
   }
 }
 
-@media (max-width: 938px) {
+@media (max-width: 1091px) {
   .gallerie-photo {
     -ms-grid-columns: auto auto;
         grid-template-columns: auto auto;
