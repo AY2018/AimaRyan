@@ -1,9 +1,12 @@
 /* PAGE PEDAGOGIE */
 
-.pedagogie_sliderAndText{
-    padding: 20px 80px;
+.pedagogie_section{
+    padding: 60px 80px;
     display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+}
     /* 2 - Pédagogie texte 1*/
     .diplomes{
         p{
@@ -18,14 +21,12 @@
             }
         }
     }
-}
 
 /* 3 - Pédagogie texte 2 - Objectifs */
 
 .objectifs_pedagogiques{
-    padding: 0px 80px;
-    padding-bottom: 20px;
     color: rgb(143, 143, 143);
+    margin-top: 40px;
     ul{
         li{
             list-style: circle;
@@ -39,6 +40,14 @@
 }
 
 /* MEDIA QUERIES */
+
+/* MAIN */
+
+@media(min-width:1156px){
+    .main80vh {
+            height: 80vh;
+        }
+}
 /* Tablette */
 @media(max-width:768px) {
     .pedagogie_sliderAndText{

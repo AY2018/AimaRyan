@@ -144,10 +144,6 @@ header nav ul li .nav-deroulant li a {
   height: auto;
 }
 
-.main80vh {
-  /*height: 80vh;*/
-}
-
 /* FOOTER */
 footer {
   width: 100%;
@@ -473,37 +469,43 @@ footer .footer_titles i:hover {
 }
 
 /* PAGE PEDAGOGIE */
-.pedagogie_sliderAndText {
-  padding: 20px 80px;
+.pedagogie_section {
+  padding: 60px 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  /* 2 - Pédagogie texte 1*/
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.pedagogie_sliderAndText .diplomes p {
+/* 2 - Pédagogie texte 1*/
+.diplomes p {
   margin-bottom: 15px;
   color: #8f8f8f;
 }
 
-.pedagogie_sliderAndText .diplomes p a {
+.diplomes p a {
   -webkit-transition: .15s ease-in;
   transition: .15s ease-in;
 }
 
-.pedagogie_sliderAndText .diplomes p a:hover {
+.diplomes p a:hover {
   color: #13aff0;
   cursor: pointer;
 }
 
 /* 3 - Pédagogie texte 2 - Objectifs */
 .objectifs_pedagogiques {
-  padding: 0px 80px;
-  padding-bottom: 20px;
   color: #8f8f8f;
+  margin-top: 40px;
 }
 
 .objectifs_pedagogiques ul li {
@@ -517,6 +519,13 @@ footer .footer_titles i:hover {
 }
 
 /* MEDIA QUERIES */
+/* MAIN */
+@media (min-width: 1156px) {
+  .main80vh {
+    height: 80vh;
+  }
+}
+
 /* Tablette */
 @media (max-width: 768px) {
   .pedagogie_sliderAndText {
@@ -1230,7 +1239,7 @@ footer .footer_titles i:hover {
   background-position: -5px -84px;
 }
 
-body {
+.main_agenda {
   background: #86cad0;
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
