@@ -558,36 +558,23 @@ footer .footer_titles i:hover {
 
 /* Tablette */
 @media (max-width: 768px) {
-  .pedagogie_sliderAndText {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .pedagogie_sliderAndText .slideshow, .pedagogie_sliderAndText .diplomes {
+  .pedagogie_section .diplomes {
     width: 100%;
   }
-  .pedagogie_sliderAndText .slideshow .swiper {
-    height: auto;
-  }
-  .pedagogie_sliderAndText .diplomes p {
+  .pedagogie_section .diplomes p {
     text-align: left;
   }
 }
 
 /* PHONE */
 @media (max-width: 530px) {
-  .pedagogie_sliderAndText {
+  .pedagogie_section {
     padding: 0px;
   }
-  .pedagogie_sliderAndText .slideshow,
-  .pedagogie_sliderAndText .diplomes {
-    padding: 0px;
-  }
-  .pedagogie_sliderAndText .diplomes {
+  .pedagogie_section .diplomes {
     padding: 20px;
   }
-  .objectifs_pedagogiques {
+  .pedagogie_section .objectifs_pedagogiques {
     padding: 20px 30px;
   }
 }
