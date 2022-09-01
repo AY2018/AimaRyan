@@ -468,6 +468,25 @@ footer .footer_titles i:hover {
   }
 }
 
+/* MODIF POUR QUE L'IMAGE SOIT ON TOP avec un espace en bas avec le texte*/
+@media (max-width: 394px) {
+  .bio_main .biographie_content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .bio_main .biographie_content .biographie_picture {
+    float: none;
+  }
+}
+
 /* PAGE PEDAGOGIE */
 .pedagogie_section {
   padding: 60px 80px;
@@ -520,7 +539,7 @@ footer .footer_titles i:hover {
 
 /* MEDIA QUERIES */
 /* MAIN */
-@media (min-width: 1156px) {
+@media (min-width: 1008px) {
   .main80vh {
     height: 80vh;
   }

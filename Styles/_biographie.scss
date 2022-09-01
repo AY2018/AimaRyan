@@ -94,3 +94,18 @@
             
         }
 }
+
+/* MODIF POUR QUE L'IMAGE SOIT ON TOP avec un espace en bas avec le texte*/
+@media(max-width:394px) {
+    .bio_main {
+        .biographie_content{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+                .biographie_picture {
+                        float: none;
+                    }
+            }}
+            
+        }
+
