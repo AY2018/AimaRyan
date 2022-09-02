@@ -199,12 +199,11 @@ header nav ul li .nav-deroulant {
   -webkit-transition: 0.2s ease;
   transition: 0.2s ease;
   margin-left: 15px;
+  border: 0px;
 }
 
 header nav ul li .nav-deroulant li {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+  width: auto;
   background-color: #e9d198;
 }
 

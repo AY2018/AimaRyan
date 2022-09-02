@@ -120,8 +120,9 @@ header{
                     overflow: none;
                     transition: 0.2s ease;
                     margin-left: 15px;
+                    border:0px;
                     li{
-                        width: fit-content;
+                        width:auto;
                         background-color: #e9d198;
                         &:hover{
                             background-color: #b86867;
