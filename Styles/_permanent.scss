@@ -111,16 +111,17 @@ header{
             display: flex;
             width: auto;
             li {
-                float: left;
                 width: 100px;
-
                 /* MENU DEROULANTS */
                 .nav-deroulant {
-                    display: block;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
                     overflow: none;
                     transition: 0.2s ease;
+                    margin-left: 15px;
                     li{
-                        width: 100%;
+                        width: fit-content;
                         background-color: #e9d198;
                         &:hover{
                             background-color: #b86867;
