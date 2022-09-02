@@ -24,16 +24,52 @@
     height: 80vh;
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
+    .wrapper {
+            width: 80%;
+            margin: 20px auto;
+            overflow: hidden;
+        }
+        .agendaDD {
+            background-color: lightblue;
+            form{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .agendaDDChild {
+                        width: 300px;
+                        border-color: #4d4e50;
+                        color: #4d4e50;
+                        margin: auto;
+                    }
+            }
+        }
+        .row {
+            overflow: hidden;
+            padding: 10px 0;
+            .events {
+                    margin: 0;
+                    padding: 0;
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 20px;
+                li {
+                        position: relative;
+                        float: left;
+                        width: 200px;
+                        min-height: 200px;
+                        margin-top: 20px;
+                        background: #e9d198;
+                        list-style: none;
+                        box-sizing: border-box;
+                        box-shadow: 0 0 24px rgba(0, 0, 0, 0.26);
+                        text-align: center;
+                        padding: 0 0 30px 0;
+                    }
+                }
+        }
 }
-.wrapper {
-    width: 950px;
-    margin: 20px auto;
-    overflow: hidden;
-}
-.row {
-    overflow: hidden;
-    padding: 10px 0;
-}
+
 h1 {
     text-align: center;
     color: #fff;
@@ -41,36 +77,12 @@ h1 {
     letter-spacing: 2px;
 }
 
-.agendaDD{
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-}
 
-.agendaDDChild {
-    width: 300px;
-    border-color: #4d4e50;
-    color : #4d4e50;
-    margin: auto;  
-  }
 
-.events {
-    margin: 0;
-    padding: 0;
-}
-.events li {
-    position: relative;
-    float: left;
-    width: 17.2%;
-    margin: 1.75%;
-    min-height: 200px;
-    background: #e9d198;
-    list-style: none;
-    box-sizing: border-box;
-    box-shadow: 0 0 24px rgba(0, 0, 0, 0.26);
-    text-align: center;
-    padding: 0 0 30px 0;
-}
+
+
+
+.events 
 .events li .active{
     background: red !important;
 }
@@ -214,4 +226,70 @@ input[type=email] {
         }
 }
 
+/* MODIF INSIDE AGENDA*/
+
+@media(max-width:1138px) {
+    .main_agenda {
+            .wrapper {
+            }
+    
+            .agendaDD {
+                
+                form{
+                    .agendaDDChild {
+                            width: 33%;
+                            border-color: #4d4e50;
+                            color: #4d4e50;
+                            margin: auto;
+                        }
+                }
+            }}
+}
+
+@media(max-width:485px) {
+    .main_agenda {
+        .wrapper {
+
+        .agendaDD {
+
+            form {
+                flex-direction: column;
+                .agendaDDChild {
+                    width: 80%;
+                    border-color: #4d4e50;
+                    color: #4d4e50;
+                    margin: auto;
+                    text-align: center;
+                }
+            }
+        }
+
+        .row {
+            overflow: hidden;
+            padding: 10px 0;
+        
+            .events {
+                margin: 0;
+                padding: 0;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 20px;
+        
+                li {
+                    position: relative;
+                    float: left;
+                    width: 200px;
+                    min-height: 200px;
+                    margin-top: 20px;
+                    background: #e9d198;
+                    list-style: none;
+                    box-sizing: border-box;
+                    box-shadow: 0 0 24px rgba(0, 0, 0, 0.26);
+                    text-align: center;
+                    padding: 0 0 30px 0;
+                }
+            }
+        }
+    }}
+}
 
