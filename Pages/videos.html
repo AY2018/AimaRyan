@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     <link rel="stylesheet" href="../Styles/styles.css">
     <title>Vidéos - Alma Ryan</title>
@@ -56,7 +55,7 @@
 
     <!-- MAIN -->
     <main>
-        <section class="gallerie-videos">
+      <!--<section class="gallerie-videos">
             <div class="gallerie_videoYtb">
                 <iframe src="https://www.youtube.com/embed/D-N-JugV1Ts">
                 </iframe>
@@ -69,7 +68,51 @@
                 <iframe src="https://www.youtube.com/embed/zRxiVgDZfgM">
                 </iframe>
             </div>
-        </section>
+        </section> -->
+        <div class="myGallery">
+            <div class="videosGallery"> 
+                <!--  SOURDRE ENCORE  -->
+                <div id="1" class="videoItem currentVideo">
+                    <iframe src="https://www.youtube.com/embed/D-N-JugV1Ts">
+                    </iframe>
+                </div>
+                
+                <!--  VAMONOS -->
+                <div id="2" class="videoItem">
+                    <iframe src="https://www.youtube.com/embed/YxcKTSwSqcg">
+                    </iframe>
+                </div>
+                
+                <!--  TROIS SAISONS -->
+                <div id="3" class="videoItem">
+                    <iframe src="https://www.youtube.com/embed/zRxiVgDZfgM">
+                    </iframe>
+                </div>
+            </div>
+
+            <div class="videosMenu" >
+                <!--  SOURDRE ENCORE  -->
+                <div id="1" class="videoBtn currentButton">
+                    <p>Sourdre Encore</p>
+                    <span>A clip by Anik Myriam</span>
+                </div>
+
+                <!--  VAMONOS -->
+                <div id="2" class="videoBtn">
+                    <p>Vamonos</p>
+                    <span>A clip by Anik Myriam</span>
+                </div>
+
+                <!--  TROIS SAISONS -->
+                <div id="3" class="videoBtn">
+                    <p>Trois Saisons</p>
+                    <span>A clip by SlipDay</span>
+                </div>
+
+
+            </div>
+        </div>
+
     </main>
 
     <!-- FOOTER -->
@@ -83,6 +126,8 @@
     </footer>
     
     <!-- LES SCRIPTS JS-->
+    
+    <script src="../video.js"></script>
     <script src="../sticky2.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="../slider.js"></script>
