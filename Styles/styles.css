@@ -1399,8 +1399,6 @@ footer .footer_titles i:hover {
 }
 
 .row {
-  /*margin: 20px 0;*/
-  display: block;
   overflow: hidden;
   padding: 10px 0;
 }
@@ -1412,23 +1410,23 @@ h1 {
   letter-spacing: 2px;
 }
 
-.cl-3 {
-  float: left;
-  width: 31%;
-  margin: 1.75%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+.agendaDD {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.agendaDDChild {
+  width: 300px;
   border-color: #4d4e50;
-  position: relative;
   color: #4d4e50;
-}
-
-.cl-3:first-child {
-  margin-left: 0;
-}
-
-.cl-3:last-child {
-  margin-right: 0;
+  margin: auto;
 }
 
 .events {
@@ -1608,6 +1606,19 @@ input[type=email] {
   display: inline-block;
   margin: 0;
   font-size: 16px;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 925px) {
+  .main_agenda {
+    height: auto;
+  }
+}
+
+@media (max-width: 960px) {
+  .main_agenda {
+    height: auto;
+  }
 }
 
 .main_slider_container {

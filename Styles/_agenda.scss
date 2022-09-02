@@ -31,8 +31,6 @@
     overflow: hidden;
 }
 .row {
-    /*margin: 20px 0;*/
-    display: block;
     overflow: hidden;
     padding: 10px 0;
 }
@@ -42,21 +40,20 @@ h1 {
     font-size: 22px;
     letter-spacing: 2px;
 }
-.cl-3 {
-    float: left;
-    width: 31%;
-    margin: 1.75%;
-    box-sizing: border-box;
+
+.agendaDD{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.agendaDDChild {
+    width: 300px;
     border-color: #4d4e50;
-    position: relative;
     color : #4d4e50;
+    margin: auto;  
   }
-.cl-3:first-child {
-    margin-left: 0;
-}
-.cl-3:last-child {
-    margin-right: 0;
-}
+
 .events {
     margin: 0;
     padding: 0;
@@ -198,3 +195,23 @@ input[type=email] {
     margin: 0;
     font-size: 16px;
 }
+
+
+
+/* MEDIA QUERIES */
+
+
+
+@media(max-width:925px){
+    .main_agenda {
+            height: auto;
+        }
+}
+
+@media(max-width:960px){
+    .main_agenda {
+            height: auto;
+        }
+}
+
+
