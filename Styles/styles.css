@@ -204,7 +204,7 @@ header nav ul li .nav-deroulant {
 
 header nav ul li .nav-deroulant li {
   width: auto;
-  background-color: #e9d198;
+  background-color: transparent;
 }
 
 header nav ul li .nav-deroulant li:hover {
@@ -1798,16 +1798,74 @@ input[type=email] {
 
 .videoBtn:hover {
   text-decoration: underline;
-  background-color: rgba(0, 128, 0, 0.404);
+  background-color: #b86867;
   cursor: pointer;
 }
 
+.videoBtn span {
+  font-style: italic;
+}
+
 .currentButton {
-  background-color: green;
+  background-color: #b04c4c;
 }
 
 .currentVideo {
   display: inherit;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .myGallery {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  .myGallery .videosGallery, .myGallery .videosMenu {
+    width: 95%;
+  }
+  .myGallery .videosMenu {
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .myGallery .videosMenu .videoBtn {
+    width: 33%;
+    padding: 15px 10px;
+  }
+  .myGallery .videosMenu .videoBtn span {
+    margin-top: 5px;
+  }
+}
+
+@media (max-width: 425px) {
+  .myGallery {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
 }
 
 .main_slider_container {
@@ -1900,7 +1958,7 @@ input[type=email] {
 
 .main_slider_container .slideshow .swiper .swiper-button-prev,
 .main_slider_container .slideshow .swiper .swiper-button-next {
-  color: #13aff0;
+  color: #b86867 !important;
 }
 
 .main_header {

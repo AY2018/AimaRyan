@@ -5,13 +5,13 @@
 .videosGallery
 {
     width: 80vw;
-    height: 80vh
+    height: 80vh;
 }
 
 .videosMenu
 {
     width: 20vw;
-    height: 80vh
+    height: 80vh;
 }
 .videoItem
 {
@@ -38,17 +38,64 @@
     font-size: 16px;
     &:hover{
         text-decoration: underline;
-        background-color: rgba(0, 128, 0, 0.404);
+        background-color: #b86867;
         cursor: pointer;
+    }
+    span{
+        font-style: italic;
     }
   }
 
 .currentButton
 {
-    background-color: green;
+    background-color: #b04c4c;
 }
   
 .currentVideo
 {
       display: inherit;
+}
+
+
+/* RESPONSIVE */
+
+
+
+@media(max-width:768px){
+    .myGallery{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        .videosGallery, .videosMenu{
+            width: 95%;
+        }
+        .videosGallery{
+        }
+        .videosMenu{
+            height: auto;
+            display: flex;
+            justify-content: space-between;
+            .videoBtn{
+                width: 33%;
+                padding: 15px 10px;
+                span{
+                    margin-top: 5px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:425px){
+    .myGallery {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            margin-top: 20px;
+    
+            .videosGallery{
+            }}
 }
