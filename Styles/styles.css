@@ -367,6 +367,10 @@ footer .footer_titles i:hover {
   background-color: white;
 }
 
+.logo_moving2 {
+  display: none;
+}
+
 @media (min-width: 850px) {
   header nav ul li .nav-deroulant {
     display: none;
@@ -443,12 +447,20 @@ footer .footer_titles i:hover {
   header .nav-menu li {
     width: 100%;
   }
-  header .nav-menu li ul {
+  header .nav-menu li .nav-deroulant {
     position: relative;
     width: 100%;
     background-color: transparent;
     border-radius: 0px;
     background-color: #24252A;
+    margin-left: 0px;
+  }
+  header .nav-menu li .nav-deroulant li {
+    width: 100%;
+    background-color: #24252A;
+  }
+  header .nav-menu li .nav-deroulant li a {
+    text-align: center;
   }
   header .active {
     left: 0;
@@ -489,9 +501,6 @@ footer .footer_titles i:hover {
   header .logo .tire {
     display: none;
   }
-  header .hamburger {
-    left: 20px;
-  }
   footer .footer_titles a, footer .footer_titles p, footer .footer_titles i {
     font-size: 12px;
   }
@@ -515,6 +524,27 @@ footer .footer_titles i:hover {
   }
 }
 
+/* CHANGE OF HAMBURGER */
+/* DISPARITION 1er Logo */
+@media (max-width: 720px) {
+  header .logo .logo_moving1 {
+    display: none;
+  }
+  header .hamburger {
+    display: none;
+  }
+  header .logo_moving2 {
+    display: block;
+    position: absolute;
+    left: 50px;
+    top: 50%;
+  }
+  header .logo_moving2:hover {
+    cursor: pointer;
+  }
+}
+
+/* DISPARITION 2e Logo */
 .swiper {
   width: 100%;
   height: 35vh;

@@ -281,6 +281,9 @@ footer{
     }
 }
 
+.logo_moving2{
+    display: none;
+}
 
 @media(min-width:850px){
     header{
@@ -349,12 +352,20 @@ footer{
                 }
                 li {
                     width: 100%;
-                    ul{
+                    .nav-deroulant{
                         position: relative;
                         width: 100%;
                         background-color: transparent;
                         border-radius: 0px;
                         background-color: #24252A;
+                        margin-left: 0px;
+                        li{
+                            width: 100%;
+                            background-color: #24252A;
+                            a{
+                                text-align: center;
+                            }
+                        }
                     }
                 }
             }
@@ -405,9 +416,6 @@ footer{
                     display: none;
                 }
             }
-            .hamburger{
-                left: 20px;
-            }
         }
 
 
@@ -438,3 +446,30 @@ footer{
             z-index: 9999;
     }
 }
+
+/* CHANGE OF HAMBURGER */
+
+/* DISPARITION 1er Logo */
+@media(max-width:720px){
+    header {
+            .logo {
+                .logo_moving1 {
+                    display: none;
+                }
+            }
+                .hamburger{
+                    display: none;
+                }
+                .logo_moving2{
+                    display: block;
+                    position: absolute;
+                        left: 50px;
+                        top: 50%;
+                        &:hover{
+                            cursor: pointer;
+                        }
+                }
+        }
+}
+
+/* DISPARITION 2e Logo */
