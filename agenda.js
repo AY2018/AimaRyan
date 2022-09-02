@@ -14,30 +14,28 @@ var app = angular.module('calenderApp',[]);
 app.controller('calender', function ($scope) {
 
     var eventsJson = [{
-        "id": "033MRAK",
+        "id": "HF",
         "title": "Hauts-Fonds",
         "date": "24 Septembre 2022",
         "enddate": "24 Septembre 2022",
         "time": "20H30",
         "location": "Temple des Batignolles",
-        "coordinates": [25.7945254, 55.9428746],
         "city": "Paris",
-        "organizer": "",
         "categories": ["Public"],
-        "fbevent" : "https://fb.me/e/1XdTvHe14"
+        "fbevent" : "https://fb.me/e/1XdTvHe14",
+        "status" : "next"
         }, 
         {
-            "id": "033SOEN",
+            "id": "SE",
             "title": "Sourdre Encore",
             "date": "14 Mars 2020",
             "enddate": "14 Mars 2020",
             "time": "20H30",
             "location": "Temple des Batignolles",
-            "coordinates": [25.7945254, 55.9428746],
             "city": "Paris",
-            "organizer": "",
             "categories": ["Public"],
-            "fbevent" : "https://fb.me/e/2OM0MxTG5"
+            "fbevent" : "https://fb.me/e/2OM0MxTG5",
+            "status" : "done"
             }
 
     ]

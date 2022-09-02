@@ -1718,6 +1718,14 @@ input[type=email] {
   }
 }
 
+.done {
+  opacity: 0.5;
+}
+
+.next {
+  opacity: 1;
+}
+
 .main_slider_container {
   background-color: #252525;
 }

@@ -112,7 +112,7 @@
             </div>
             <div class="row">
                <ul class="events">
-                  <li ng-repeat="event in events | filter:filters">
+                  <li ng-repeat="event in events | filter:filters" class="{{event.status}}">
                      <span class="day">{{event.date | date:'dd'}}</span>
                      <span class="date">{{event.date | date:'MMMM yyyy'}}</span>
                      <span class="title">{{event.title}}</span>
