@@ -248,6 +248,8 @@ header nav ul .nav-link_notMenu .ligne_nav {
   position: absolute;
   bottom: -5px;
   display: none;
+  filter: brightness(0) invert(1);
+
   -webkit-transition: 0.15s ease-in;
   transition: 0.15s ease-in;
 }
