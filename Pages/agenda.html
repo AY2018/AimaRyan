@@ -118,10 +118,10 @@
                      <span class="title">{{event.title}}</span>
                      <span class="time">{{event.time}}</span>
                      <span class="location">{{event.location}}</span>
-                     <div class="actions">
+                     <span class="fbevent">  <a href={{event.fbevent}} target="_blank"> <button  class="viewEvent event_action"><i class="sprite sprite-view"></i> </button> </a> </span>
+                    <!-- <div class="actions">
                         <button  ng-click="selected = !selected; selectEvent(event,selected); " ng-class="{'active':selected }" class="addEvent event_action"><i class="sprite sprite-calender"></i> </button>
-                        <a href="https://fb.me/e/1XdTvHe14" target="_blank"> <button  class="viewEvent event_action"><i class="sprite sprite-view"></i> </button> </a>
-                     </div>
+                      </div> -->
                   </li>
                </ul>
             </div>

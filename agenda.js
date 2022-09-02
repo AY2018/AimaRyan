@@ -24,6 +24,7 @@ app.controller('calender', function ($scope) {
         "city": "Paris",
         "organizer": "",
         "categories": ["Public"],
+        "fbevent" : "https://fb.me/e/1XdTvHe14"
         }, 
         {
             "id": "033SOEN",
@@ -36,6 +37,7 @@ app.controller('calender', function ($scope) {
             "city": "Paris",
             "organizer": "",
             "categories": ["Public"],
+            "fbevent" : "https://fb.me/e/2OM0MxTG5"
             }
 
     ]
