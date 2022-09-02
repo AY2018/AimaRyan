@@ -1660,6 +1660,17 @@ input[type=email] {
   }
 }
 
+@media (min-width: 1440px) {
+  .main_agenda .wrapper .agendaDD form {
+    display: initial;
+  }
+  .main_agenda .wrapper .agendaDD form .agendaDDChild {
+    width: 300px;
+    color: #4d4e50;
+    margin: auto;
+  }
+}
+
 @media (max-width: 485px) {
   .main_agenda .wrapper .agendaDD form {
     -webkit-box-orient: vertical;
