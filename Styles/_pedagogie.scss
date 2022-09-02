@@ -8,7 +8,7 @@
     width: 90%;
     height: 80vh;
     margin: 20px auto;
-    color: white;
+    color: black;
 }
     /* 2 - Pédagogie texte 1*/
     .diplomes{
@@ -17,7 +17,7 @@
             a{
                 transition: .15s ease-in;
                 &:hover{
-                    color: white;
+                    color: #b04c4c;
                     cursor: pointer;
                 }
             }
@@ -34,7 +34,7 @@
             margin-bottom: 10px;
             font-size: 14px;
             span{
-                color: #da828d;
+                color: #b04c4c;
                 font-weight: bold;
             }
         }

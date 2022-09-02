@@ -20,7 +20,8 @@
 }
 
 .main_agenda{
-    background: #86cad0;
+    background: white;
+    height: 80vh;
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
 }
@@ -46,8 +47,9 @@ h1 {
     width: 31%;
     margin: 1.75%;
     box-sizing: border-box;
+    border-color: #4d4e50;
     position: relative;
-    color : black;
+    color : #4d4e50;
   }
 .cl-3:first-child {
     margin-left: 0;
@@ -65,7 +67,7 @@ h1 {
     width: 17.2%;
     margin: 1.75%;
     min-height: 200px;
-    background: #f5f8fe;
+    background: #e9d198;
     list-style: none;
     box-sizing: border-box;
     box-shadow: 0 0 24px rgba(0, 0, 0, 0.26);
@@ -92,9 +94,9 @@ h1 {
 }
 .events li .date {
     font-size: 14px;
-    color: #8a8b8e;
+    color: #4d4e50;
 }
-.events li .location {
+.events li .title {
     display: flex;
     align-self: center;
     align-items: center;
@@ -103,9 +105,9 @@ h1 {
     height: 40px;
     line-height: 16px;
     padding: 15px 0;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 600;
-    border: solid 2px #f27fa6;
+    border: solid 2px #b04c4c;
     border-width: 2px 0 2px 0;
     margin: 10px 20px;
     color: #505050;
@@ -116,9 +118,10 @@ h1 {
     color: #505050;
     font-weight: normal;
 }
-.events li .dxb {
+.events li .location {
     font-size: 12px;
-    color: #f27fa6;
+    color: #b04c4c;
+    font-weight: bold;
 }
 .events li:hover .actions{
     opacity: 1;
