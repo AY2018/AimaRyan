@@ -248,8 +248,6 @@ header nav ul .nav-link_notMenu .ligne_nav {
   position: absolute;
   bottom: -5px;
   display: none;
-  filter: brightness(0) invert(1);
-
   -webkit-transition: 0.15s ease-in;
   transition: 0.15s ease-in;
 }
@@ -449,12 +447,20 @@ footer .footer_titles i:hover {
   header .nav-menu li {
     width: 100%;
   }
-  header .nav-menu li ul {
+  header .nav-menu li .nav-deroulant {
     position: relative;
     width: 100%;
     background-color: transparent;
     border-radius: 0px;
     background-color: #24252A;
+    margin-left: 0px;
+  }
+  header .nav-menu li .nav-deroulant li {
+    width: 100%;
+    background-color: #24252A;
+  }
+  header .nav-menu li .nav-deroulant li a {
+    text-align: center;
   }
   header .active {
     left: 0;
@@ -532,6 +538,9 @@ footer .footer_titles i:hover {
     position: absolute;
     left: 50px;
     top: 50%;
+  }
+  header .logo_moving2:hover {
+    cursor: pointer;
   }
 }
 
