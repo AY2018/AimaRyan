@@ -1396,6 +1396,7 @@ footer .footer_titles i:hover {
   width: 80%;
   margin: 20px auto;
   overflow: hidden;
+  height: 80vh;
 }
 
 .main_agenda .agendaDD form {
