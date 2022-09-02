@@ -51,13 +51,11 @@
                     height: 100%;
                     width: auto;
                     
-                    animation: move 40s ease;
-                    -ms-animation: move 40s ease;
-                      -webkit-animation: move 40s ease;
-                    -O-animation: move 40s ease;
-                    -moz-animation: move 40s ease;
                 }
 
+                
+                
+                
                 .slide_horizontale{
                     width: 100%;
                     object-fit: cover;
@@ -160,7 +158,15 @@
 @media(max-width:530px) {}
 
 
+.swiper-slide-active>.slide_horizontale {
+        animation: move 40s ease;
+        -ms-animation: move 40s ease;
+          -webkit-animation: move 40s ease;
+        -O-animation: move 40s ease;
+        -moz-animation: move 40s ease;
 
+
+} 
 
 /*KEN BURNS EFFECT*/
 @-webkit-keyframes move {
