@@ -69,7 +69,7 @@ header{
     width: 100%;
     position: relative;
     z-index: 9999;
-    background-color: #e9d198;
+    background-color: rgba(37, 37, 37, 0.884);
 
     /* LOGO */
     .logo {
@@ -221,7 +221,7 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #e9d198;
+    background-color: rgba(37, 37, 37, 0.884);
     p{
         color: #b86867;
         text-align: center;
