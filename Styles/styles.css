@@ -1789,6 +1789,11 @@ input[type=email] {
 .main_slider_container .slideshow .swiper img {
   height: 100%;
   width: auto;
+  animation: move 40s ease;
+  -ms-animation: move 40s ease;
+  -webkit-animation: move 40s ease;
+  -O-animation: move 40s ease;
+  -moz-animation: move 40s ease;
 }
 
 .main_slider_container .slideshow .swiper .slide_horizontale {
@@ -1798,7 +1803,7 @@ input[type=email] {
 }
 
 .main_slider_container .slideshow .swiper .slide_vertical {
-  height: 98%;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -1895,4 +1900,31 @@ input[type=email] {
 }
 
 /* PHONE */
+/*KEN BURNS EFFECT*/
+@-webkit-keyframes move {
+  0% {
+    -webkit-transform-origin: bottom left;
+    transform-origin: bottom left;
+    transform: scale(1);
+    -ms-transform: scale(1);
+    /* IE 9 */
+    -webkit-transform: scale(1);
+    /* Safari and Chrome */
+    -o-transform: scale(1);
+    /* Opera */
+    -moz-transform: scale(1);
+    /* Firefox */
+  }
+  100% {
+    transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    /* IE 9 */
+    -webkit-transform: scale(1.2);
+    /* Safari and Chrome */
+    -o-transform: scale(1.2);
+    /* Opera */
+    -moz-transform: scale(1.2);
+    /* Firefox */
+  }
+}
 /*# sourceMappingURL=styles.css.map */
