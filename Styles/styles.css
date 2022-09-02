@@ -1831,6 +1831,21 @@ input[type=email] {
   background-image: url(../img/img2-min.jpeg);
 }
 
+.imgV4 {
+  background-image: url(../img/hf-affiche.jpg);
+}
+
+.buttonHF {
+  top: 30%;
+  background-color: rgba(255, 255, 255, 0.6) !important;
+  color: black !important;
+}
+
+.buttonHF:hover {
+  background-color: rgba(36, 36, 36, 0.6) !important;
+  color: white !important;
+}
+
 .main_slider_container {
   background-color: #464646;
 }
