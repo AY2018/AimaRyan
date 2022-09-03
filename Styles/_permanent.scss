@@ -112,6 +112,7 @@ header{
             width: auto;
             li {
                 width: 100px;
+                position: relative;
                 /* MENU DEROULANTS */
                 .nav-deroulant {
                     display: flex;
@@ -119,11 +120,14 @@ header{
                     justify-content: center;
                     overflow: none;
                     transition: 0.2s ease;
-                    margin-left: 15px;
                     border:0px;
+                    position: absolute;
+                    left: 15px;
+                    top: 140%;
                     li{
                         width:auto;
-                        background-color: transparent;
+                        background-color: rgba(37, 37, 37, 0.443);
+                        
                         &:hover{
                             background-color: #b86867;
                         }
@@ -145,7 +149,7 @@ header{
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                &:hover a{
+                &:hover{
                     color: white;
                     cursor: pointer;
                     font-weight: bold;
@@ -161,9 +165,22 @@ header{
                     display: initial;
                 }
             }
+            .nav-link_Menu{
+                position: relative;
+                &:hover {
+                        color: white;
+                        padding-right: 5px;
+                        cursor: pointer;
+                        font-weight: bold;
+                    }
+                .ligne_nav{
+
+                }
+            }
             .current {
                 .ligne_nav {
                     display: initial;
+                    filter: brightness(100);
                 }
             
                 a {
