@@ -177,6 +177,7 @@ header nav ul {
   display: -ms-flexbox;
   display: flex;
   width: auto;
+  /* LIENS MENU ROULANT */
 }
 
 header nav ul li {
@@ -265,9 +266,22 @@ header nav ul .nav-link_Menu {
 
 header nav ul .nav-link_Menu:hover {
   color: white;
-  padding-right: 5px;
   cursor: pointer;
   font-weight: bold;
+}
+
+header nav ul .nav-link_Menu .ligne_nav {
+  width: 90%;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  display: none;
+  -webkit-transition: 0.15s ease-in;
+  transition: 0.15s ease-in;
+}
+
+header nav ul .nav-link_Menu:hover .ligne_nav {
+  display: initial;
 }
 
 header nav ul .current .ligne_nav {

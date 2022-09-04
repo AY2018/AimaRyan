@@ -127,7 +127,6 @@ header{
                     li{
                         width:auto;
                         background-color: rgba(37, 37, 37, 0.443);
-                        
                         &:hover{
                             background-color: #b86867;
                         }
@@ -165,17 +164,26 @@ header{
                     display: initial;
                 }
             }
+            /* LIENS MENU ROULANT */
             .nav-link_Menu{
                 position: relative;
                 &:hover {
                         color: white;
-                        padding-right: 5px;
                         cursor: pointer;
                         font-weight: bold;
                     }
-                .ligne_nav{
-
-                }
+                    .ligne_nav {
+                        width: 90%;
+                        position: absolute;
+                        bottom: -5px;
+                        left: 0;
+                        display: none;
+                        transition: 0.15s ease-in;
+                    }
+                
+                    &:hover .ligne_nav {
+                        display: initial;
+                    }
             }
             .current {
                 .ligne_nav {
@@ -304,7 +312,9 @@ footer{
 
 @media(min-width:850px){
     header{
-        nav{ul{li{
+        nav{
+            ul{
+                li{
             .nav-deroulant {
                     display: none;
                     position: absolute;
