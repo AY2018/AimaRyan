@@ -123,7 +123,6 @@ header{
                     border:0px;
                     position: absolute;
                     left: 15px;
-                    top: 140%;
                     li{
                         width:auto;
                         background-color: rgba(37, 37, 37, 0.443);
@@ -165,26 +164,7 @@ header{
                 }
             }
             /* LIENS MENU ROULANT */
-            .nav-link_Menu{
-                position: relative;
-                &:hover {
-                        color: white;
-                        cursor: pointer;
-                        font-weight: bold;
-                    }
-                    .ligne_nav {
-                        width: 90%;
-                        position: absolute;
-                        bottom: -5px;
-                        left: 0;
-                        display: none;
-                        transition: 0.15s ease-in;
-                    }
-                
-                    &:hover .ligne_nav {
-                        display: initial;
-                    }
-            }
+            
             .current {
                 .ligne_nav {
                     display: initial;
@@ -316,10 +296,9 @@ footer{
             ul{
                 li{
             .nav-deroulant {
-                    display: none;
-                    position: absolute;
+                left: 0;
                     overflow: none;
-                    background-color: #24252A;
+                    background-color: #24252A80;
                 }
             &:hover ul,
             &:focus-within ul {
@@ -332,6 +311,22 @@ footer{
 @media(max-width:1220px){
     header{
         justify-content: center;
+        nav{
+            ul{
+                .current{
+                    .ligne_nav {
+                            display: none;
+                        }
+                }
+                .nav-link_notMenu{
+                    .ligne_nav{}
+                    &:hover .ligne_nav{
+                        display: none;
+                    }
+                }
+            }
+            
+        }}}
         .logo{
             width: 100%;
             display: flex;
@@ -403,8 +398,6 @@ footer{
                 margin-top: 20px;
                 transition: 0.3s ease-in;
             }
-    }
-}
 
 /* Tablette */
 @media(max-width:768px){
