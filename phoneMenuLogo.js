@@ -1,4 +1,4 @@
-let logo2 = document.querySelector(".logo_moving2")
+let logo2 = document.querySelector("#logo_moving2")
 let navMenuuu = document.querySelector(".nav-menu")
 
 /* Hamburger menu appears */
@@ -8,7 +8,7 @@ logo2.addEventListener("click", () => {
 
 /* Hamburger menu disappears*/
 document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
-    logo2.classList.remove("active0");
+
     navMenuuu.classList.remove("active");
 }))
 
