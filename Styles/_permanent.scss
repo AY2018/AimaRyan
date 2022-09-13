@@ -149,21 +149,8 @@ header{
                     cursor: pointer;
                     font-weight: bold;
                 }
-                .ligne_nav {
-                        width: 90%;
-                        position: absolute;
-                        bottom: -5px;
-                        display: none;
-                        transition: 0.15s ease-in;
-                    }
-                &:hover .ligne_nav {
-                    display: initial;
-                }
             }
             .current {
-                .ligne_nav {
-                    display: initial;
-                }
             
                 a {
                     color: #be923a;
@@ -173,6 +160,11 @@ header{
             }
         }
     }
+}
+.current2{
+    color: #be923a !important;
+        cursor: pointer;
+        font-weight: bold;
 }
 .sticky {
     position: fixed;
@@ -369,11 +361,6 @@ footer{
                 transform: translateX(-100%);
             }
         }
-        nav{
-            .hamburger{
-                display: none;
-            }
-        }
     }
     footer{
         a, p{
@@ -385,6 +372,7 @@ footer{
     }
 }
 /* PHONE */
+
 @media(max-width:530px){
     header {
             .logo {
@@ -404,6 +392,11 @@ footer{
                     display: none;
                 }
             }
+
+            .hamburger {
+        left: 50px;
+        top: 10%;
+    }
         }
         footer {
             .footer_titles{

@@ -139,3 +139,13 @@
             }
         }
 }
+
+@media(max-width:320px) {
+    .contact_section {
+        .contact_form {
+            .form-btn {
+                width: 100%;
+            }
+        }
+    }
+}

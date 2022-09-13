@@ -21,14 +21,11 @@
 
 .main_agenda{
     background: white;
-    height: 80vh;
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     .wrapper {
             width: 80%;
             margin: 20px auto;
-            overflow: hidden;
-            height: 80vh;
         }
         .agendaDD {
             form{
@@ -228,13 +225,11 @@ input[type=email] {
 
 @media(max-width:925px){
     .main_agenda {
-            height: auto;
         }
 }
 
 @media(max-width:960px){
     .main_agenda {
-            height: auto;
         }
 }
 
@@ -323,3 +318,8 @@ input[type=email] {
 .next{
     opacity: 1;
 }
+
+@media(min-width:525px) {
+    .main_agenda {
+        height: 80vh;
+    }}
