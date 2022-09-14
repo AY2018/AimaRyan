@@ -98,14 +98,14 @@ img {
   -ms-animation-duration: 40000ms;
   -ms-animation-iteration-count: infinite;
   -ms-animation-timing-function: linear;
-  fill: #85343d;
+  fill: #72b4a4;
 }
 
 .logo_moving .second {
   -webkit-animation-duration: 20000ms;
   -moz-animation-duration: 20000ms;
   -ms-animation-duration: 20000ms;
-  fill: #b04c4c;
+  fill: #3f7f6d;
 }
 
 .logo_moving .third {
@@ -113,7 +113,7 @@ img {
   -moz-animation-duration: 9000ms;
   -ms-animation-duration: 9000ms;
   width: 80%;
-  fill: #b86867;
+  fill: #3f9590;
 }
 
 /* HEADER */
@@ -132,7 +132,7 @@ header {
   width: 100%;
   position: relative;
   z-index: 9999;
-  background-color: rgba(37, 37, 37, 0.884);
+  background-color: #203e2e;
   /* LOGO */
   /* MENU */
 }
@@ -152,18 +152,18 @@ header .logo a {
 
 header .logo h1 {
   font-size: 20px;
-  color: #b04c4c;
+  color: #72b4a4;
 }
 
 header .logo h1 span {
   font-size: 15px;
-  color: #be923a;
+  color: #d1a87a;
   font-weight: 600;
 }
 
 header nav a {
   padding: 10px 15px;
-  color: #b86867;
+  color: #72b4a4;
   display: block;
   text-decoration: none;
   font-size: 14px;
@@ -213,12 +213,12 @@ header nav ul li .nav-deroulant {
 
 header nav ul li .nav-deroulant li {
   width: auto;
-  background-color: #e9d198;
+  background-color: #d1a87a;
   background-color: transparent;
 }
 
 header nav ul li .nav-deroulant li:hover {
-  background-color: #b86867;
+  background-color: #72b4a4;
 }
 
 header nav ul li .nav-deroulant li a {
@@ -230,7 +230,7 @@ header nav ul li .nav-deroulant li a {
 }
 
 header nav ul li .nav-deroulant li:hover a {
-  color: #e9d198;
+  color: #d1a87a;
 }
 
 header nav ul .nav-link_notMenu {
@@ -254,13 +254,13 @@ header nav ul .nav-link_notMenu:hover a {
 }
 
 header nav ul .current a {
-  color: #be923a;
+  color: #d1a87a;
   cursor: pointer;
   font-weight: bold;
 }
 
 .current2 {
-  color: #be923a !important;
+  color: #d1a87a !important;
   cursor: pointer;
   font-weight: bold;
 }
@@ -269,7 +269,7 @@ header nav ul .current a {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: rgba(37, 37, 37, 0.884);
+  background-color: #203e2e;
   z-index: 9999;
 }
 
@@ -292,11 +292,11 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: rgba(37, 37, 37, 0.884);
+  background-color: #203e2e;
 }
 
 footer p {
-  color: #b86867;
+  color: #72b4a4;
   text-align: center;
   margin-right: 50px;
 }
@@ -320,7 +320,7 @@ footer .footer_titles {
 }
 
 footer .footer_titles a {
-  color: #b86867;
+  color: #72b4a4;
   margin-right: 50px;
   font-size: 16px;
   text-align: center;
@@ -332,7 +332,7 @@ footer .footer_titles a:hover {
 }
 
 footer .footer_titles i {
-  color: #b86867;
+  color: #72b4a4;
   font-size: 30px;
 }
 
@@ -1961,7 +1961,7 @@ input[type=email] {
 
 .main_slider_container .slideshow .swiper .swiper-button-prev,
 .main_slider_container .slideshow .swiper .swiper-button-next {
-  color: #b86867 !important;
+  color: #72b4a4 !important;
 }
 
 .main_header {
