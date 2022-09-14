@@ -105,7 +105,7 @@ img {
   -webkit-animation-duration: 20000ms;
   -moz-animation-duration: 20000ms;
   -ms-animation-duration: 20000ms;
-  fill: #3f7f6d;
+  fill: #72b4a4;
 }
 
 .logo_moving .third {
@@ -113,7 +113,7 @@ img {
   -moz-animation-duration: 9000ms;
   -ms-animation-duration: 9000ms;
   width: 80%;
-  fill: #3f9590;
+  fill: #72b4a4;
 }
 
 /* HEADER */
@@ -161,6 +161,12 @@ header .logo h1 span {
   font-weight: 600;
 }
 
+header .underLineHover {
+  visibility: hidden;
+  position: relative;
+  margin-top: -0.5em;
+}
+
 header nav a {
   padding: 10px 15px;
   color: #72b4a4;
@@ -190,6 +196,7 @@ header nav ul {
 
 header nav ul li {
   width: 100px;
+  padding-top: 0.7em;
   /* MENU DEROULANTS */
 }
 
@@ -218,7 +225,7 @@ header nav ul li .nav-deroulant li {
 }
 
 header nav ul li .nav-deroulant li:hover {
-  background-color: #72b4a4;
+  background-color: #1e100b;
 }
 
 header nav ul li .nav-deroulant li a {
@@ -251,6 +258,14 @@ header nav ul .nav-link_notMenu:hover a {
   color: white;
   cursor: pointer;
   font-weight: bold;
+}
+
+header nav ul .nav-link_notMenu:hover > img {
+  visibility: visible;
+}
+
+header nav ul .current .underLineHover {
+  visibility: visible;
 }
 
 header nav ul .current a {
@@ -371,7 +386,7 @@ footer .footer_titles i:hover {
     display: none;
     position: absolute;
     overflow: none;
-    background-color: #24252A;
+    background-color: #203e2e;
   }
   header nav ul li:hover ul,
   header nav ul li:focus-within ul {
@@ -380,6 +395,9 @@ footer .footer_titles i:hover {
 }
 
 @media (max-width: 1220px) {
+  .underLineHover {
+    display: none;
+  }
   header {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -424,7 +442,7 @@ footer .footer_titles i:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    background-color: rgba(35, 36, 41, 0.7);
+    background-color: #203e2e;
     width: 100%;
     height: 100%;
     -webkit-box-align: center;
@@ -455,12 +473,12 @@ footer .footer_titles i:hover {
     width: 100%;
     background-color: transparent;
     border-radius: 0px;
-    background-color: #24252A;
+    background-color: #203e2e;
     margin-left: 0px;
   }
   header .nav-menu li .nav-deroulant li {
     width: 100%;
-    background-color: #24252A;
+    background-color: #203e2e;
   }
   header .nav-menu li .nav-deroulant li a {
     text-align: center;
@@ -477,6 +495,9 @@ footer .footer_titles i:hover {
 
 /* Tablette */
 @media (max-width: 768px) {
+  .underLineHover {
+    display: none;
+  }
   .sticky2 {
     position: fixed;
     top: 0;
@@ -505,6 +526,9 @@ footer .footer_titles i:hover {
 
 /* PHONE */
 @media (max-width: 530px) {
+  .underLineHover {
+    display: none;
+  }
   header .logo {
     position: relative;
   }
@@ -539,6 +563,9 @@ footer .footer_titles i:hover {
 
 /* STICKY HEADERS*/
 @media (max-width: 938px) {
+  .underLineHover {
+    display: none;
+  }
   .sticky_photos {
     position: fixed;
     top: 0;
@@ -1801,7 +1828,7 @@ input[type=email] {
 
 .videoBtn:hover {
   text-decoration: underline;
-  background-color: #b86867;
+  background-color: #72b4a4;
   cursor: pointer;
 }
 
@@ -1810,7 +1837,7 @@ input[type=email] {
 }
 
 .currentButton {
-  background-color: #b04c4c;
+  background-color: #3f7f6d;
 }
 
 .currentVideo {

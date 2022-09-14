@@ -86,6 +86,12 @@ header{
         }
     }
     /* MENU */
+    .underLineHover{
+        visibility: hidden;
+        position: relative;
+        margin-top: -0.5em;
+    }
+
     nav {
         a {
             padding: 10px 15px;
@@ -110,6 +116,7 @@ header{
             width: auto;
             li {
                 width: 100px;
+                padding-top: 0.7em;
                 /* MENU DEROULANTS */
                 .nav-deroulant {
                     display: flex;
@@ -124,7 +131,7 @@ header{
                         background-color: #d1a87a;
                         background-color: transparent;
                         &:hover{
-                            background-color: #72b4a4;
+                            background-color: #1e100b;
                         }
                         a {
                             margin-left: 0px;
@@ -144,14 +151,21 @@ header{
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                &:hover a{
+                &:hover a{ // HOVER DU MENU 
                     color: white;
                     cursor: pointer;
                     font-weight: bold;
+                   
+                }
+
+                &:hover>img{
+                    visibility: visible;
                 }
             }
             .current {
-            
+                .underLineHover{
+                    visibility: visible;
+                }
                 a {
                     color: #d1a87a;
                     cursor: pointer;
@@ -246,7 +260,7 @@ footer{
                     display: none;
                     position: absolute;
                     overflow: none;
-                    background-color: #24252A;
+                    background-color: #203e2e;
                 }
             &:hover ul,
             &:focus-within ul {
@@ -257,6 +271,10 @@ footer{
 }
 
 @media(max-width:1220px){
+    
+    .underLineHover{
+        display: none;
+    }
     header{
         justify-content: center;
         .logo{
@@ -293,7 +311,7 @@ footer{
                             left: 0;
                             right: 0;
                             flex-direction: column;
-                            background-color: hsla(230, 8%, 15%, 0.7);
+                            background-color: #203e2e;
                             width: 100%;
                             height: 100%;
                             align-items: center;
@@ -313,6 +331,7 @@ footer{
                                 .ligne_nav {
                                     display: none;
                                 }
+                               
                             }
             
                             li {
@@ -327,12 +346,12 @@ footer{
                                     width: 100%;
                                     background-color: transparent;
                                     border-radius: 0px;
-                                    background-color: #24252A;
+                                    background-color: #203e2e;
                                     margin-left: 0px;
             
                                     li {
                                         width: 100%;
-                                        background-color: #24252A;
+                                        background-color: #203e2e;
             
                                         a {
                                             text-align: center;
@@ -353,6 +372,11 @@ footer{
 }
 /* Tablette */
 @media(max-width:768px){
+    
+    .underLineHover{
+        display: none;
+    }
+
     .sticky2 {
             position: fixed;
             top: 0;
@@ -385,6 +409,10 @@ footer{
 /* PHONE */
 
 @media(max-width:530px){
+    
+    .underLineHover{
+        display: none;
+    }
     header {
             .logo {
                 position: relative;
@@ -427,6 +455,10 @@ footer{
 
 /* STICKY HEADERS*/
 @media(max-width:938px){
+    
+    .underLineHover{
+        display: none;
+    }
     .sticky_photos{
         position: fixed;
             top: 0;
