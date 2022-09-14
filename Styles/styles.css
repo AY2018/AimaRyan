@@ -381,7 +381,7 @@ footer .footer_titles i:hover {
   background-color: white;
 }
 
-@media (min-width: 850px) {
+@media (min-width: 1219px) {
   header nav ul li .nav-deroulant {
     display: none;
     position: absolute;
@@ -435,7 +435,7 @@ footer .footer_titles i:hover {
   header .nav-menu {
     position: fixed;
     padding-top: 60px;
-    top: -90vh;
+    top: -200vh;
     left: 0;
     right: 0;
     -webkit-box-orient: vertical;

@@ -253,7 +253,7 @@ footer{
     }
 }
 
-@media(min-width:850px){
+@media(min-width:1219px){
     header{
         nav{ul{li{
             .nav-deroulant {
@@ -307,7 +307,7 @@ footer{
                         .nav-menu {
                             position: fixed;
                             padding-top: 60px;
-                            top: -90vh;
+                            top: -200vh;
                             left: 0;
                             right: 0;
                             flex-direction: column;
