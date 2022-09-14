@@ -225,7 +225,7 @@ header nav ul li .nav-deroulant li {
 }
 
 header nav ul li .nav-deroulant li:hover {
-  background-color: #1e100b;
+  background-color: #72b4a4;
 }
 
 header nav ul li .nav-deroulant li a {
@@ -2102,8 +2102,6 @@ input[type=email] {
 
 .main_slider_container .slideshow .swiper .slide_vertical {
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 .main_slider_container .slideshow .swiper .swiper-wrapper {
